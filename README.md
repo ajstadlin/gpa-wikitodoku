@@ -1,4 +1,7 @@
-# gpa-wiki Repository #
+# GPS Wiki to DokuWiki Migration Concept Repository #
+
+## THIS IS NOT A PRODUCTION REPOSITORY ##
+This is just a development and testing repository.  
 
 ---
 
@@ -49,4 +52,4 @@ DokuWiki document specific files can be stored in the _projectnamespace:document
 
 ---
 
-Sep 20, 2016 updated
+Sep 24, 2016 updated
