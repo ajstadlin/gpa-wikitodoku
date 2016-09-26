@@ -1,0 +1,31 @@
+﻿# DokuFixup Document Fixup Mapping - Updated Sep 26, 2016
+# ================================
+# This is a data file required by DokuFixup.  This file is copied to the application startup folder by Build.
+#
+# The Source files should be already converted by pandoc from markdown_github to dokuwiki.
+# The DokuFixup program will fixup the DokuWiki formatted files.  
+#   For example, the ".md" extension will be removed from relative file links since that extension is not used in the GPA DokuWiki
+#
+# Path is relative to the Application.Startup Path
+#   In this Project Repository, the Application.Startup Path = REPOSITORY_ROOT/wiki/wiki-to-doku/DokuFixup/bin/Debug
+#   For examples:
+#     wiki/openpdc relative path = ../../../../../wiki/openpdc
+#     doku/openpdc relative path = ../../../../../doku/openpdc
+#
+# Links will be detected by their "](link)" syntax. 
+# The following data read into a table in the DokuFixup application.
+# For each Source File
+#   For each Original Link in the Table : Search an Replace with its corresponding Replacement Link
+# After links are replaced, save the Updated Source to its corresponding Destination File
+# 
+# Each file being fixed should only have one row in the list below.
+# If you need to replace additional links not related to a file, use the following syntax replacing filenames with "null"
+# null * null * ORIGINAL_LINK * REPLACEMENT_LINK
+#...................................................................................................
+# SOURCE_PATH_FILE * DESTINATION_PATH_FILE * ORIGINAL_LINK * REPLACEMENT_LINK
+
+../../../../../wiki/openpdc/getting-started * ../../../../../doku/openpdc/getting-started * Getting-Started.md * getting-started
+../../../../../wiki/openpdc/documentation * ../../../../../doku/openpdc/documentation * openPDC_Documentation_Home.md * documentation
+../../../../../wiki/openpdc/overview * ../../../../../doku/openpdc/overview * README.md * overview
+
+
