@@ -1,0 +1,6 @@
+[user]
+	name = aj
+	email = ajstadlin@gridtrak.com
+[core]
+	autocrlf = false
+

@@ -1,7 +1,7 @@
 ﻿//**************************************************************
 // DokuFixup Utility
 //==============================================================
-// 10/01/16 Development
+// 10/03/16 Development
 // 09/26/16 Concept 
 //**************************************************************
 
@@ -156,23 +156,30 @@ public class DokuFixup
 					Console.WriteLine(sourceText);
 					try
 					{
-						// Our files are not very big, so Read all the text into the sourceText variable
-						sourceText = File.ReadAllText(fileRow[C_SOURCEFILE].ToString());
-
-						// Replace each Original Link with its Replacement Link
-						foreach (DataRowView linkRow in s_LinksTable.DefaultView)
+						if (File.Exists(fileRow[C_SOURCEFILE].ToString()))
 						{
-							sourceText = sourceText.Replace(linkRow[C_ORIGINALLINK].ToString(), linkRow[C_REPLACELINK].ToString());
-						}
+							// Our files are not very big, so Read all the text into the sourceText variable
+							sourceText = File.ReadAllText(fileRow[C_SOURCEFILE].ToString());
 
-						// Check to see if a previous version of the Target File Exists and Erase it.
-						if (File.Exists(fileRow[C_TARGETFILE].ToString()))
+							// Replace each Original Link with its Replacement Link
+							foreach (DataRowView linkRow in s_LinksTable.DefaultView)
+							{
+								sourceText = sourceText.Replace(linkRow[C_ORIGINALLINK].ToString(), linkRow[C_REPLACELINK].ToString());
+							}
+
+							// Check to see if a previous version of the Target File Exists and Erase it.
+							if (File.Exists(fileRow[C_TARGETFILE].ToString()))
+							{
+								File.Delete(fileRow[C_TARGETFILE].ToString());
+							}
+
+							// Save the fixed content to the Target File
+							File.WriteAllText(fileRow[C_TARGETFILE].ToString(), sourceText);
+						}
+						else
 						{
-							File.Delete(fileRow[C_TARGETFILE].ToString());
+							Console.WriteLine(" > File does not exist! > " + fileRow[C_SOURCEFILE].ToString());
 						}
-
-						// Save the fixed content to the Target File
-						File.WriteAllText(fileRow[C_TARGETFILE].ToString(), sourceText);
 					}
 					catch (Exception ex) 
 					{

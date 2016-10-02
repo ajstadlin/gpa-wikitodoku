@@ -20,14 +20,14 @@
 #   For each Original Link in the Links table : Search an Replace with its corresponding Replacement Link
 # After links are replaced, save the Updated Source to its corresponding Destination File
 # 
+# NOTE:  mono System.IO.File() does not properly handle the ~/ home directory shortcut!
 # Each source file being fixed should only have one PROCESS row in the list below.
 #...................................................................................................
 # TASK * SOURCE_PATH_FILE * DESTINATION_PATH_FILE 
 
-PROCESS * ~/gpa-wikitodoku.g/doku/openpdc/getting-started * ~/gpa-wikitodoku.g/doku/openpdc/getting-started 
-PROCESS * ~/gpa-wikitodoku.g/doku/openpdc/documentation * ~/gpa-wikitodoku.g/doku/openpdc/documentation
-PROCESS * ~/gpa-wikitodoku.g/doku/openpdc/overview * ~/gpa-wikitodoku.g/doku/openpdc/overview
-
+PROCESS * /home/aj/GPA/gpa-wikitodoku/doku/openpdc/getting-started * /home/aj/GPA/gpa-wikitodoku/doku/openpdc/getting-started 
+PROCESS * /home/aj/GPA/gpa-wikitodoku/doku/openpdc/documentation * /home/aj/GPA/gpa-wikitodoku/doku/openpdc/documentation
+PROCESS * /home/aj/GPA/gpa-wikitodoku/doku/openpdc/overview * /home/aj/GPA/gpa-wikitodoku/doku/openpdc/overview
 
 #...................................................................................................
 # Links that need to be replaced in every PROCESS file
