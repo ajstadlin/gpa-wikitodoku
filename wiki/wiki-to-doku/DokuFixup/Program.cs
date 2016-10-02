@@ -1,4 +1,11 @@
-﻿using System;
+﻿//**************************************************************
+// DokuFixup Utility
+//==============================================================
+// 10/01/16 Development
+// 09/26/16 Concept 
+//**************************************************************
+
+using System;
 using System.Data;
 using System.IO;
 
@@ -7,7 +14,9 @@ public class DokuFixup
 	#region [ Members ]
 
 	static string s_MapPathFile = "FixupMap.txt"; 
-	static DataTable s_MapTable = null;
+	static DataTable s_FilesTable = null;   // Source and Destination Files Map
+	static DataTable s_LinksTable = null;   // Original and Replacement Links Map
+	//[TODO] static DataTable s_TextsTable = null;   // Original and Replacement Texts Map
 
 	// Map DataTable Column Names
 	const string C_SOURCEFILE = "SourceFile";
@@ -45,10 +54,16 @@ public class DokuFixup
 		ProcessFiles();
 
 		// clean up
-		if (s_MapTable != null)
+		if (s_FilesTable != null)
 		{
-			s_MapTable.Dispose();
-			s_MapTable = null;
+			s_FilesTable.Dispose();
+			s_FilesTable = null;
+		}
+
+		if (s_LinksTable != null)
+		{
+			s_LinksTable.Dispose();
+			s_LinksTable = null;
 		}
 		GC.Collect();
 
@@ -59,32 +74,21 @@ public class DokuFixup
 	}
 
 
-	private static void ProcessFiles()
-	{
-		try
-		{
-			if (File.Exists(s_MapPathFile))
-			{
-				MapFileLoad();
-			}
-		}
-		catch (Exception ex) 
-		{
-			Console.WriteLine("ERROR Processing Files -> " + ex.Message);
-			return;
-		}
-	}
-
-
+	/// <summary>
+	/// Reads a Mapping File and imports its data into s_MapTable for subsequent processing.
+	/// </summary>
 	private static void MapFileLoad()
 	{
 		// Create the Map DataTable and define its DataColumns
-		s_MapTable = new DataTable("MapTable");
-		s_MapTable.Columns.Add(new DataColumn(C_SOURCEFILE, typeof(string)));
-		s_MapTable.Columns.Add(new DataColumn(C_TARGETFILE, typeof(string)));
-		s_MapTable.Columns.Add(new DataColumn(C_ORIGINALLINK, typeof(string)));
-		s_MapTable.Columns.Add(new DataColumn(C_REPLACELINK, typeof(string)));
-		s_MapTable.AcceptChanges();
+		s_FilesTable = new DataTable("FilesTable");
+		s_FilesTable.Columns.Add(new DataColumn(C_SOURCEFILE, typeof(string)));
+		s_FilesTable.Columns.Add(new DataColumn(C_TARGETFILE, typeof(string)));
+		s_FilesTable.AcceptChanges();
+
+		s_LinksTable = new DataTable("LinksTable");
+		s_LinksTable.Columns.Add(new DataColumn(C_ORIGINALLINK, typeof(string)));
+		s_LinksTable.Columns.Add(new DataColumn(C_REPLACELINK, typeof(string)));
+		s_LinksTable.AcceptChanges();
 
 		try
 		{
@@ -99,32 +103,88 @@ public class DokuFixup
 				{
 					// Parse the line by the "*" delimiter and ignore when there are not 4 values.
 					string[] rowdata = dataline.Split("*".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
-					if (rowdata.Length == 4)
+					if (rowdata.Length == 3)
 					{
-						// We have 4 column values for a DataRow.
-						// Populate the data row and add it to the Map Table
-						DataRow newRow = s_MapTable.NewRow();
-						for (int colindex = 0; colindex < 4; colindex++)
+						// We have 3 column values for a Map Row.
+						Console.WriteLine(" + " + rowdata[0].ToString() 
+							+ " * " + rowdata[1].ToString().Trim() + " * " + rowdata[2].ToString().Trim());
+
+						if (rowdata[0].ToString().Trim().ToUpper() == "PROCESS")
 						{
-							if (rowdata[colindex].Trim().ToLower() == "null")
-							{
-								newRow[colindex] = "";
-							}
-							else
-							{
-								newRow[colindex] = rowdata[colindex].Trim().Replace("'", "");
-							}
+							// Add the Source and Target Files to the FilesTable
+							DataRow newRow = s_FilesTable.NewRow();
+							newRow[C_SOURCEFILE] = rowdata[1].Trim();
+							newRow[C_TARGETFILE] = rowdata[2].Trim();
+							s_FilesTable.Rows.Add(newRow);
 						}
-						s_MapTable.Rows.Add(newRow);
-						Console.WriteLine(" + " + newRow[0] + " * " + newRow[1] + " * " + newRow[2] + " * " + newRow[3]);
+						else if (rowdata[0].ToString().Trim().ToUpper() == "REPLACELINK")
+						{
+							// Add the Original and Replace Links to the LinksTable
+							DataRow newRow = s_LinksTable.NewRow();
+							newRow[C_ORIGINALLINK] = rowdata[1].Trim();
+							newRow[C_REPLACELINK] = rowdata[2].Trim();
+							s_LinksTable.Rows.Add(newRow);
+						}
 					}
 				}
 			}
+			s_FilesTable.AcceptChanges();
+			s_LinksTable.AcceptChanges();
 		}
 		catch (Exception ex)
 		{
 			Console.WriteLine("ERROR Importing Map Data -> " + ex.Message);
 			return;			
+		}
+	}
+
+
+	private static void ProcessFiles()
+	{
+		try
+		{
+			// Check for a Mapping File to Import
+			if (File.Exists(s_MapPathFile))
+			{
+				// Import the Mapping File into s_MapTable
+				MapFileLoad();
+
+				// Process s_MapTable Records
+				foreach (DataRowView fileRow in s_FilesTable.DefaultView)
+				{
+					string sourceText = "Processing Source File [ " + fileRow[C_SOURCEFILE].ToString() + " ]...";
+					Console.WriteLine(sourceText);
+					try
+					{
+						// Our files are not very big, so Read all the text into the sourceText variable
+						sourceText = File.ReadAllText(fileRow[C_SOURCEFILE].ToString());
+
+						// Replace each Original Link with its Replacement Link
+						foreach (DataRowView linkRow in s_LinksTable.DefaultView)
+						{
+							sourceText = sourceText.Replace(linkRow[C_ORIGINALLINK].ToString(), linkRow[C_REPLACELINK].ToString());
+						}
+
+						// Check to see if a previous version of the Target File Exists and Erase it.
+						if (File.Exists(fileRow[C_TARGETFILE].ToString()))
+						{
+							File.Delete(fileRow[C_TARGETFILE].ToString());
+						}
+
+						// Save the fixed content to the Target File
+						File.WriteAllText(fileRow[C_TARGETFILE].ToString(), sourceText);
+					}
+					catch (Exception ex) 
+					{
+						Console.WriteLine("ERROR Processing Source File -> " + ex.Message);
+					}
+				}
+			}
+		}
+		catch (Exception ex) 
+		{
+			Console.WriteLine("ERROR Processing Files -> " + ex.Message);
+			return;
 		}
 	}
 
