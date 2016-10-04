@@ -21,8 +21,8 @@ mkdir ~/GPA || :
 # Arbitrarily, the repositories are processed in alphabetical order below.
 
 # BroccoliSharp
-#git clone https://github.com/GridProtectionAlliance/BroccoliSharp.git ~/GPA/broccolisharp
-#cd ~/GPA/broccolisharp
+#git clone https://github.com/GridProtectionAlliance/BroccoliSharp.git ~/GPA/BroccoliSharp
+#cd ~/GPA/BroccoliSharp
 #git fetch
 
 # ARMORE
@@ -86,8 +86,8 @@ mkdir ~/GPA || :
 #git fetch
 
 # openPDC
-git clone https://github.com/GridProtectionAlliance/openPDC.git ~/GPA/openpdc  || :
-cd ~/GPA/openpdc || :
+git clone https://github.com/GridProtectionAlliance/openPDC.git ~/GPA/openPDC  || :
+cd ~/GPA/openPDC || :
 git fetch || :
 
 # openSEE
