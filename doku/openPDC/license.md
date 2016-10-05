@@ -1,13 +1,7 @@
-[![The Open Source Phasor Data Concentrator](https://github.com/GridProtectionAlliance/openPDC/blob/master/Source/Documentation/wiki/openPDC_Logo.png)](https://github.com/GridProtectionAlliance/openPDC/tree/master/Source/Documentation/wiki/openPDC_Home.md)
-================================================================================================================================================================================================================================================================
+[![The Open Source Phasor Data Concentrator](openPDC_Logo.png)](openPDC_Home.md)
 
-------------------------------------------------------------------------
-
-|                                                                       |                                                                                    |                                                                                                                                  |                                                                                                                                            |
 |-----------------------------------------------------------------------|------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| **[Grid Protection Alliance](http://www.gridprotectionalliance.org)** | **[openPDC Project on GitHub](https://github.com/GridProtectionAlliance/openPDC)** | **[openPDC Wiki Home](https://github.com/GridProtectionAlliance/openPDC/tree/master/Source/Documentation/wiki/openPDC_Home.md)** | **[Documentation](https://github.com/GridProtectionAlliance/openPDC/tree/master/Source/Documentation/wiki/openPDC_Documentation_Home.md)** |
-
-------------------------------------------------------------------------
+| **[Grid Protection Alliance](http://www.gridprotectionalliance.org)** | **[openPDC Project on GitHub](https://github.com/GridProtectionAlliance/openPDC)** | **[openPDC Wiki Home](openPDC_Home.md)** | **[Documentation](openPDC_Documentation_Home.md)** |
 
 The MIT License (MIT)
 =====================
