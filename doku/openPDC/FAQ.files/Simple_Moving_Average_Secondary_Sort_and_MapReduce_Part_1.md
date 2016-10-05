@@ -1,5 +1,5 @@
+<HTML>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
 <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
 
 <head>
@@ -168,13 +168,13 @@ var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Cl
 
 <body class="single single-post postid-6955 single-format-standard devcenter">
 
-			
+            
 
-		
+        
 
-			
+            
 
-	<header id="site-head">
+    <header id="site-head">
 <nav class="properties">
             <div class="container">
                 <ul>
@@ -249,648 +249,648 @@ var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Cl
 
 
     <div class="form-holder">
-		
-	    <form action="http://cloudera.com/content/cloudera/en/search.html" id="site-search" method="get" novalidate> 
-	        <label for="q" class="visuallyhidden">Search</label> 
-	        <input type="search" name="q" id="q" placeholder="Search"><i class="icon-search"></i> 
-	    </form>
+        
+        <form action="http://cloudera.com/content/cloudera/en/search.html" id="site-search" method="get" novalidate> 
+            <label for="q" class="visuallyhidden">Search</label> 
+            <input type="search" name="q" id="q" placeholder="Search"><i class="icon-search"></i> 
+        </form>
 </div>
 </div><!--</div>-->
         </header>
-				
+                
 
-	<div role="main" class="main">
+    <div role="main" class="main">
 
-		<div class="wrapper">
+        <div class="wrapper">
 
-			<section class="two-col">
+            <section class="two-col">
 
 
 
-	
+    
 
 <aside class="left-col">
 
-				<nav>
-			<ul class=" ">
-			
-								
-							<li class="">
-				<a
-					href="http://www.cloudera.com/content/cloudera/en/why-cloudera/hadoop-and-big-data.html"
-					title="Hadoop &amp; Big Data"
-					class=""
-					target="_blank"				>
-					Hadoop &amp; Big Data				</a>
+                <nav>
+            <ul class=" ">
+            
+                                
+                            <li class="">
+                <a
+                    href="http://www.cloudera.com/content/cloudera/en/why-cloudera/hadoop-and-big-data.html"
+                    title="Hadoop &amp; Big Data"
+                    class=""
+                    target="_blank"             >
+                    Hadoop &amp; Big Data               </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="http://www.cloudera.com/content/cloudera/en/why-cloudera/our-customers.html"
-					title="Our Customers"
-					class=""
-					target="_blank"				>
-					Our Customers				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="http://www.cloudera.com/content/cloudera/en/why-cloudera/our-customers.html"
+                    title="Our Customers"
+                    class=""
+                    target="_blank"             >
+                    Our Customers               </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="http://www.cloudera.com/content/cloudera/en/why-cloudera/faqs.html"
-					title="FAQs"
-					class=""
-					target="_blank"				>
-					FAQs				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="http://www.cloudera.com/content/cloudera/en/why-cloudera/faqs.html"
+                    title="FAQs"
+                    class=""
+                    target="_blank"             >
+                    FAQs                </a>
 
-							</li>
-			
-					<li class="current">
-				<a
-					href="/blog/"
-					title="Blog"
-					class="blog"
-									>
-					Blog				</a>
+                            </li>
+            
+                    <li class="current">
+                <a
+                    href="/blog/"
+                    title="Blog"
+                    class="blog"
+                                    >
+                    Blog                </a>
 
-									<ul>
-									<li class="">
-				<a
-					href="/blog/category/accumulo/"
-					title="Accumulo (1)"
-					class=""
-									>
-					Accumulo (1)				</a>
+                                    <ul>
+                                    <li class="">
+                <a
+                    href="/blog/category/accumulo/"
+                    title="Accumulo (1)"
+                    class=""
+                                    >
+                    Accumulo (1)                </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/avro/"
-					title="Avro (17)"
-					class=""
-									>
-					Avro (17)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/avro/"
+                    title="Avro (17)"
+                    class=""
+                                    >
+                    Avro (17)               </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/bigtop/"
-					title="Bigtop (6)"
-					class=""
-									>
-					Bigtop (6)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/bigtop/"
+                    title="Bigtop (6)"
+                    class=""
+                                    >
+                    Bigtop (6)              </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/books/"
-					title="Books (12)"
-					class=""
-									>
-					Books (12)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/books/"
+                    title="Books (12)"
+                    class=""
+                                    >
+                    Books (12)              </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/careers/"
-					title="Careers (15)"
-					class=""
-									>
-					Careers (15)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/careers/"
+                    title="Careers (15)"
+                    class=""
+                                    >
+                    Careers (15)                </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/cdh/"
-					title="CDH (157)"
-					class=""
-									>
-					CDH (157)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/cdh/"
+                    title="CDH (157)"
+                    class=""
+                                    >
+                    CDH (157)               </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/cloud-2/"
-					title="Cloud (25)"
-					class=""
-									>
-					Cloud (25)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/cloud-2/"
+                    title="Cloud (25)"
+                    class=""
+                                    >
+                    Cloud (25)              </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/cloudera-labs/"
-					title="Cloudera Labs (10)"
-					class=""
-									>
-					Cloudera Labs (10)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/cloudera-labs/"
+                    title="Cloudera Labs (10)"
+                    class=""
+                                    >
+                    Cloudera Labs (10)              </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/cloudera-life/"
-					title="Cloudera Life (7)"
-					class=""
-									>
-					Cloudera Life (7)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/cloudera-life/"
+                    title="Cloudera Life (7)"
+                    class=""
+                                    >
+                    Cloudera Life (7)               </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/cloudera-manager/"
-					title="Cloudera Manager (77)"
-					class=""
-									>
-					Cloudera Manager (77)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/cloudera-manager/"
+                    title="Cloudera Manager (77)"
+                    class=""
+                                    >
+                    Cloudera Manager (77)               </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/community/"
-					title="Community (221)"
-					class=""
-									>
-					Community (221)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/community/"
+                    title="Community (221)"
+                    class=""
+                                    >
+                    Community (221)             </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/data-ingestion/"
-					title="Data Ingestion (22)"
-					class=""
-									>
-					Data Ingestion (22)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/data-ingestion/"
+                    title="Data Ingestion (22)"
+                    class=""
+                                    >
+                    Data Ingestion (22)             </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/data-science/"
-					title="Data Science (37)"
-					class=""
-									>
-					Data Science (37)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/data-science/"
+                    title="Data Science (37)"
+                    class=""
+                                    >
+                    Data Science (37)               </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/events/"
-					title="Events (55)"
-					class=""
-									>
-					Events (55)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/events/"
+                    title="Events (55)"
+                    class=""
+                                    >
+                    Events (55)             </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/flume/"
-					title="Flume (25)"
-					class=""
-									>
-					Flume (25)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/flume/"
+                    title="Flume (25)"
+                    class=""
+                                    >
+                    Flume (25)              </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/general/"
-					title="General (339)"
-					class=""
-									>
-					General (339)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/general/"
+                    title="General (339)"
+                    class=""
+                                    >
+                    General (339)               </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/graph-processing/"
-					title="Graph Processing (3)"
-					class=""
-									>
-					Graph Processing (3)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/graph-processing/"
+                    title="Graph Processing (3)"
+                    class=""
+                                    >
+                    Graph Processing (3)                </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/guest/"
-					title="Guest (114)"
-					class=""
-									>
-					Guest (114)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/guest/"
+                    title="Guest (114)"
+                    class=""
+                                    >
+                    Guest (114)             </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/hadoop/"
-					title="Hadoop (344)"
-					class=""
-									>
-					Hadoop (344)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/hadoop/"
+                    title="Hadoop (344)"
+                    class=""
+                                    >
+                    Hadoop (344)                </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/hardware/"
-					title="Hardware (6)"
-					class=""
-									>
-					Hardware (6)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/hardware/"
+                    title="Hardware (6)"
+                    class=""
+                                    >
+                    Hardware (6)                </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/hbase/"
-					title="HBase (151)"
-					class=""
-									>
-					HBase (151)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/hbase/"
+                    title="HBase (151)"
+                    class=""
+                                    >
+                    HBase (151)             </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/hdfs/"
-					title="HDFS (55)"
-					class=""
-									>
-					HDFS (55)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/hdfs/"
+                    title="HDFS (55)"
+                    class=""
+                                    >
+                    HDFS (55)               </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/hive/"
-					title="Hive (74)"
-					class=""
-									>
-					Hive (74)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/hive/"
+                    title="Hive (74)"
+                    class=""
+                                    >
+                    Hive (74)               </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/how-to/"
-					title="How-to (92)"
-					class=""
-									>
-					How-to (92)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/how-to/"
+                    title="How-to (92)"
+                    class=""
+                                    >
+                    How-to (92)             </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/hue/"
-					title="Hue (35)"
-					class=""
-									>
-					Hue (35)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/hue/"
+                    title="Hue (35)"
+                    class=""
+                                    >
+                    Hue (35)                </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/impala/"
-					title="Impala (94)"
-					class=""
-									>
-					Impala (94)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/impala/"
+                    title="Impala (94)"
+                    class=""
+                                    >
+                    Impala (94)             </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/kafka/"
-					title="Kafka (12)"
-					class=""
-									>
-					Kafka (12)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/kafka/"
+                    title="Kafka (12)"
+                    class=""
+                                    >
+                    Kafka (12)              </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/kite-sdk/"
-					title="Kite SDK (17)"
-					class=""
-									>
-					Kite SDK (17)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/kite-sdk/"
+                    title="Kite SDK (17)"
+                    class=""
+                                    >
+                    Kite SDK (17)               </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/mahout-2/"
-					title="Mahout (5)"
-					class=""
-									>
-					Mahout (5)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/mahout-2/"
+                    title="Mahout (5)"
+                    class=""
+                                    >
+                    Mahout (5)              </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/mapreduce/"
-					title="MapReduce (75)"
-					class=""
-									>
-					MapReduce (75)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/mapreduce/"
+                    title="MapReduce (75)"
+                    class=""
+                                    >
+                    MapReduce (75)              </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/meet-the-engineer/"
-					title="Meet The Engineer (23)"
-					class=""
-									>
-					Meet The Engineer (23)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/meet-the-engineer/"
+                    title="Meet The Engineer (23)"
+                    class=""
+                                    >
+                    Meet The Engineer (23)              </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/metadata-and-lineage/"
-					title="Metadata And Lineage (1)"
-					class=""
-									>
-					Metadata And Lineage (1)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/metadata-and-lineage/"
+                    title="Metadata And Lineage (1)"
+                    class=""
+                                    >
+                    Metadata And Lineage (1)                </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/oozie/"
-					title="Oozie (26)"
-					class=""
-									>
-					Oozie (26)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/oozie/"
+                    title="Oozie (26)"
+                    class=""
+                                    >
+                    Oozie (26)              </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/ops/"
-					title="Ops And DevOps (24)"
-					class=""
-									>
-					Ops And DevOps (24)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/ops/"
+                    title="Ops And DevOps (24)"
+                    class=""
+                                    >
+                    Ops And DevOps (24)             </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/parquet-2/"
-					title="Parquet (15)"
-					class=""
-									>
-					Parquet (15)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/parquet-2/"
+                    title="Parquet (15)"
+                    class=""
+                                    >
+                    Parquet (15)                </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/performance/"
-					title="Performance (16)"
-					class=""
-									>
-					Performance (16)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/performance/"
+                    title="Performance (16)"
+                    class=""
+                                    >
+                    Performance (16)                </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/pig/"
-					title="Pig (37)"
-					class=""
-									>
-					Pig (37)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/pig/"
+                    title="Pig (37)"
+                    class=""
+                                    >
+                    Pig (37)                </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/project-rhino/"
-					title="Project Rhino (5)"
-					class=""
-									>
-					Project Rhino (5)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/project-rhino/"
+                    title="Project Rhino (5)"
+                    class=""
+                                    >
+                    Project Rhino (5)               </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/quickstart-vm/"
-					title="QuickStart VM (6)"
-					class=""
-									>
-					QuickStart VM (6)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/quickstart-vm/"
+                    title="QuickStart VM (6)"
+                    class=""
+                                    >
+                    QuickStart VM (6)               </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/search/"
-					title="Search (26)"
-					class=""
-									>
-					Search (26)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/search/"
+                    title="Search (26)"
+                    class=""
+                                    >
+                    Search (26)             </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/security-2/"
-					title="Security (35)"
-					class=""
-									>
-					Security (35)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/security-2/"
+                    title="Security (35)"
+                    class=""
+                                    >
+                    Security (35)               </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/sentry/"
-					title="Sentry (3)"
-					class=""
-									>
-					Sentry (3)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/sentry/"
+                    title="Sentry (3)"
+                    class=""
+                                    >
+                    Sentry (3)              </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/spark/"
-					title="Spark (54)"
-					class=""
-									>
-					Spark (54)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/spark/"
+                    title="Spark (54)"
+                    class=""
+                                    >
+                    Spark (54)              </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/sqoop/"
-					title="Sqoop (24)"
-					class=""
-									>
-					Sqoop (24)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/sqoop/"
+                    title="Sqoop (24)"
+                    class=""
+                                    >
+                    Sqoop (24)              </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/support/"
-					title="Support (5)"
-					class=""
-									>
-					Support (5)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/support/"
+                    title="Support (5)"
+                    class=""
+                                    >
+                    Support (5)             </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/testing/"
-					title="Testing (9)"
-					class=""
-									>
-					Testing (9)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/testing/"
+                    title="Testing (9)"
+                    class=""
+                                    >
+                    Testing (9)             </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/tools/"
-					title="Tools (9)"
-					class=""
-									>
-					Tools (9)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/tools/"
+                    title="Tools (9)"
+                    class=""
+                                    >
+                    Tools (9)               </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/training-2/"
-					title="Training (46)"
-					class=""
-									>
-					Training (46)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/training-2/"
+                    title="Training (46)"
+                    class=""
+                                    >
+                    Training (46)               </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/use-case/"
-					title="Use Case (72)"
-					class=""
-									>
-					Use Case (72)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/use-case/"
+                    title="Use Case (72)"
+                    class=""
+                                    >
+                    Use Case (72)               </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/yarn/"
-					title="YARN (17)"
-					class=""
-									>
-					YARN (17)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/yarn/"
+                    title="YARN (17)"
+                    class=""
+                                    >
+                    YARN (17)               </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/zookeeper/"
-					title="ZooKeeper (24)"
-					class=""
-									>
-					ZooKeeper (24)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/zookeeper/"
+                    title="ZooKeeper (24)"
+                    class=""
+                                    >
+                    ZooKeeper (24)              </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/archive/"
-					title="Archives by Month"
-					class=""
-									>
-					Archives by Month				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/archive/"
+                    title="Archives by Month"
+                    class=""
+                                    >
+                    Archives by Month               </a>
 
-							</li>
-			
-							</ul>
-							</li>
-			
-						
-			    
-			
-				<div style="clear:both"></div>
-			</ul>
-			</nav>
-			<div class="menu-special">
-				<ul>
-							
-				
-				
-		
-				
-		
-				
-				
-				
-				
+                            </li>
+            
+                            </ul>
+                            </li>
+            
+                        
+                
+            
+                <div style="clear:both"></div>
+            </ul>
+            </nav>
+            <div class="menu-special">
+                <ul>
+                            
+                
+                
+        
+                
+        
+                
+                
+                
+                
 
-		
-					</ul>
+        
+                    </ul>
 </div>
-			
+            
 </aside>
 
 
 
 <section>
 
-			<h1 class="heading ">Simple Moving Average, Secondary Sort, and MapReduce (Part 1)</h1>
+            <h1 class="heading ">Simple Moving Average, Secondary Sort, and MapReduce (Part 1)</h1>
 
-			
+            
 
-			<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+            <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
 
-			
+            
 
-			<ul class="post-info">
+            <ul class="post-info">
 
-				<li>by <a href="http://blog.cloudera.com/blog/author/josh-patterson/" title="Posts by Josh Patterson" rel="author">Josh Patterson</a></li>
+                <li>by <a href="http://blog.cloudera.com/blog/author/josh-patterson/" title="Posts by Josh Patterson" rel="author">Josh Patterson</a></li>
 
-				<li>March 14, 2011</li>
+                <li>March 14, 2011</li>
 
-				<li class="comment"><a href="#comments">3 comments</a></li>
+                <li class="comment"><a href="#comments">3 comments</a></li>
 
-				
+                
 
-			</ul>
+            </ul>
 
-			
+            
 
-			<div class="text-block">
+            <div class="text-block">
 
-				<h2>Intro</h2>
+                <h2>Intro</h2>
 <p>In this three part blog series I want to take a look at how we would do a Simple Moving Average with MapReduce and Apache Hadoop. This series is meant to show how to translate a common Excel or R function into MapReduce java code with accompanying working code and data to play with. Most analysts can take a few months of stock data and produce an excel spreadsheet that shows a moving average, but doing this in Hadoop might be a more daunting task. Although time series as a topic is relatively well understood, I wanted to take the approach of using a simple topic to show how it translated into a powerful parallel application that can calculate the simple moving average for a lot of stocks simultaneously with MapReduce and Hadoop. I also want to demonstrate the underlying mechanic of using the &#8220;secondary sort&#8221; technique with Hadoop&#8217;s MapReduce shuffle phase, which we&#8217;ll see is applicable to a lot of different application domains such as finance, sensor, and genomic data.</p>
 <p>This article should be approachable to the beginner Hadoop programmer who has done a little bit of MapReduce in java and is looking for a slightly more challenging MapReduce application to hack on.  In case you&#8217;re not very familiar with Hadoop, <a title="CDH" href="https://wiki.cloudera.com/display/DOC/Cloudera+Documentation+Home+Page">here&#8217;s some background information and CDH</a>. The code in this example is hosted on github and is documented to illustrate how the various components work together to achieve the secondary sort effect. One of the goals of this article is to have this code be relatively basic and approachable by most programmers.</p>
 <p>So let&#8217;s take a quick look at what time series data is and where it is employed in the quickly emerging world of large-scale data.</p>
@@ -920,8 +920,8 @@ var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Cl
 <ul>
 <li>To process high resolution time series data with a RDBMS we&#8217;d need to use an analytic aggregate function in tandem with moving window predicates (ex: the &#8220;OVER&#8221; clause)  which results in rapidly increasing amounts of work to do as the granularity of time series data gets finer.</li>
 <li>Query results are not perfectly commutable and cannot do variable step sliding windows (ex: step 5 seconds per window move) without significant unnecessary intermediate work or non-standard SQL functions.</li>
-<li>Queries on RDBMS for time series for certain techniques can be awkward and tend to require premature 	subdividing of the data and costly reconstruction during processing (example: Data mining, iSAX decompositions)</li>
-<li>Due to the above factors, with large amounts of time series data RDBMS performance 	degrades while scaling.</li>
+<li>Queries on RDBMS for time series for certain techniques can be awkward and tend to require premature    subdividing of the data and costly reconstruction during processing (example: Data mining, iSAX decompositions)</li>
+<li>Due to the above factors, with large amounts of time series data RDBMS performance  degrades while scaling.</li>
 </ul>
 </div>
 <p>Most simple time series calculations are performed with everyone&#8217;s favorite analysis tool: the spreadsheet. However, when we need to look at data that is beyond the 65k row limit of Excel how does our approach evolve as we scale our data up? In this article we&#8217;ll stop to take a look at the issues involved when scaling data before we jump into MapReduce and how Hadoop approaches things. Let&#8217;s start with a simple moving average on a small sample of data in Excel. We&#8217;ll progress onto the same example in R and then we&#8217;ll work our way toward a full blown MapReduce application in java (code included). Once we have our sample data working well with MapReduce, we&#8217;ll calculate the simple moving average of all stocks on the NYSE from 1970 to the present in one pass without changing any code.</p>
@@ -932,7 +932,7 @@ var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Cl
 <p>In parts 2 and 3 of this blog series we&#8217;ll take the reader from simple moving average in Excel, through R, and then into a real example with code of simple moving average in MapReduce.</p>
 
 
-				<div class="social-buttons">
+                <div class="social-buttons">
 
 <span class='st_facebook_large' displayText='Facebook'></span>
 
@@ -950,7 +950,7 @@ var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Cl
 
 
 
-			<div class="grid_2" style="margin:0">
+            <div class="grid_2" style="margin:0">
 
   <div class="comments comments-2">
 
@@ -959,11 +959,11 @@ var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Cl
       <h4>Filed under:</h4>
 
       <ul class="post-categories">
-	<li><a href="http://blog.cloudera.com/blog/category/general/" title="View all posts in General" rel="category tag">General</a></li>
-	<li><a href="http://blog.cloudera.com/blog/category/hadoop/" title="View all posts in Hadoop" rel="category tag">Hadoop</a></li>
-	<li><a href="http://blog.cloudera.com/blog/category/mapreduce/" title="View all posts in MapReduce" rel="category tag">MapReduce</a></li></ul>  	</div>
+    <li><a href="http://blog.cloudera.com/blog/category/general/" title="View all posts in General" rel="category tag">General</a></li>
+    <li><a href="http://blog.cloudera.com/blog/category/hadoop/" title="View all posts in Hadoop" rel="category tag">Hadoop</a></li>
+    <li><a href="http://blog.cloudera.com/blog/category/mapreduce/" title="View all posts in MapReduce" rel="category tag">MapReduce</a></li></ul>      </div>
 
-  	
+    
 
   <a name="comments"></a>
 
@@ -977,33 +977,33 @@ var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Cl
 
   <ul class="comments-list">
 
-  	<li>
-		<em class="comment-date">
-			<a rel="nofollow" href="">Evan Sparks</a> /
-			March 14, 2011 / 8:12 AM		</em>
+    <li>
+        <em class="comment-date">
+            <a rel="nofollow" href="">Evan Sparks</a> /
+            March 14, 2011 / 8:12 AM        </em>
 <p>Have to nitpick a little here &#8211; R was NOT created specifically to handle time-series data in the financial services industry. It is the open source implementation of the &#8220;S&#8221; programming language, which was created as a general purpose statistical programming language. Personally, I find R&#8217;s handling of time series data fairly weak compared to other analytic systems I&#8217;ve used. (Don&#8217;t get me wrong, I&#8217;m a big-time R fan and user.)</p>
 <p>Second &#8211; after years of working with and studying this stuff, my belief is that fundamentally RDBMS&#8217;s are crippled when it comes to looking at time-series data because they rely on set theory. Sets are naturally unordered, while time dimensions have a very clear natural order. The unordered nature of sets makes the math work out nicely in favor of RDBMS for transactional processing, but less so for analytical processing. </p>
 <p>All that said, I&#8217;m really looking forward to seeing time-series analysis in Hadoop!</p>
-	</li>
+    </li>
 </li>
-	<li>
-		<em class="comment-date">
-			<a rel="nofollow" href="">Jay</a> /
-			December 03, 2011 / 11:07 AM		</em>
+    <li>
+        <em class="comment-date">
+            <a rel="nofollow" href="">Jay</a> /
+            December 03, 2011 / 11:07 AM        </em>
 <p>Evan<br />
 When you state that you find other analytics more powerful than R for time series, can you share which ones.  It would be good to compare notes.<br />
 Jay</p>
-	</li>
+    </li>
 </li>
-	<li>
-		<em class="comment-date">
-			<a rel="nofollow" href="">Markus Brechbühler</a> /
-			March 05, 2013 / 12:54 AM		</em>
+    <li>
+        <em class="comment-date">
+            <a rel="nofollow" href="">Markus Brechbühler</a> /
+            March 05, 2013 / 12:54 AM       </em>
 <p>Do you mind adding the links to part 2 and 3? I saw an example where the mapper gathered all the data and during the reduce phase the values were calculated.</p>
 <p>If you have a simple moving average (SMA) this is a good solution. It starts to suffer if you implement a backtesting on a GARCH (1, 1) over 3000++ datapoints.</p>
 <p>Regards,<br />
 Markus</p>
-	</li>
+    </li>
 </li>
   </ul>
 
@@ -1011,56 +1011,56 @@ Markus</p>
 
   <form action="/wp-comments-post.php" method="POST">
 
-  	<div class="comment-form">
+    <div class="comment-form">
 
-  		<h4>Leave a comment</h4>
+        <h4>Leave a comment</h4>
 
-  		<div class="row">
+        <div class="row">
 
-  			<input type="text" value="" class="txt" name="author"/>
+            <input type="text" value="" class="txt" name="author"/>
 
-  			<label>Name <span>required</span></label>
-
-</div>
-
-  		<div class="row">
-
-  			<input type="text" value="" class="txt" name="email"/>
-
-  			<label class="published">Email <span>required</span> <em>(will not be published)</em></label>
+            <label>Name <span>required</span></label>
 
 </div>
 
-  		<div class="row">
+        <div class="row">
 
-  			<input type="text" value="" class="txt" name="url"/>
+            <input type="text" value="" class="txt" name="email"/>
 
-  			<label>Website</label>
-
-</div>
-
-  		<div class="row">
-
-  			<textarea rows="10" cols="30" class="area" name="comment"></textarea>
-
-  			<label>Comment</label>
+            <label class="published">Email <span>required</span> <em>(will not be published)</em></label>
 
 </div>
 
-  		<fieldset>
+        <div class="row">
 
-  			<input type="button" value="Leave Comment" class="btn cta"/>
+            <input type="text" value="" class="txt" name="url"/>
 
-  		</fieldset>
+            <label>Website</label>
 
 </div>
 
-  	<input type='hidden' name='comment_post_ID' value='6955' id='comment_post_ID' />
+        <div class="row">
+
+            <textarea rows="10" cols="30" class="area" name="comment"></textarea>
+
+            <label>Comment</label>
+
+</div>
+
+        <fieldset>
+
+            <input type="button" value="Leave Comment" class="btn cta"/>
+
+        </fieldset>
+
+</div>
+
+    <input type='hidden' name='comment_post_ID' value='6955' id='comment_post_ID' />
 <input type='hidden' name='comment_parent' id='comment_parent' value='0' />
-  	<p class="cptch_block"><label>Prove you're human!<span class="required"> *</span></label><br />		<input type="hidden" name="cptch_result" value="+PeX" />
-		<input type="hidden" name="cptch_time" value="1443848670" />
-		<input type="hidden" value="Version: 2.4" />
-		&#102;&#111;ur &times; 7 =  <input id="cptch_input" type="text" autocomplete="off" name="cptch_number" value="" maxlength="2" size="2" aria-required="true" required="required" style="margin-bottom:0;display:inline;font-size: 12px;width: 40px;" />	</p>  </form>
+    <p class="cptch_block"><label>Prove you're human!<span class="required"> *</span></label><br />     <input type="hidden" name="cptch_result" value="+PeX" />
+        <input type="hidden" name="cptch_time" value="1443848670" />
+        <input type="hidden" value="Version: 2.4" />
+        &#102;&#111;ur &times; 7 =  <input id="cptch_input" type="text" autocomplete="off" name="cptch_number" value="" maxlength="2" size="2" aria-required="true" required="required" style="margin-bottom:0;display:inline;font-size: 12px;width: 40px;" />  </p>  </form>
 
 </div></section>
 
@@ -1287,3 +1287,4 @@ Copyright 2015 <a href="http://www.gridprotectionalliance.org">Grid Protection A
 <!--/HtmlToGmd.Foot-->
 
 </body></html>
+</HTML>

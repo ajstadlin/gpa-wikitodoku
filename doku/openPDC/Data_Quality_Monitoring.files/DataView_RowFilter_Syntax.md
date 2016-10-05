@@ -1,3 +1,4 @@
+<HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -396,34 +397,34 @@ found here <a
 href="http://msdn2.microsoft.com/en-us/library/system.data.datacolumn.expression.aspx">DataColumn.Ex­pression</a>.</p>
 
 <ul>
-	<li><code>CONVERT</code> – converts particular expression to a specified .NET
-	Framework type</li>
+    <li><code>CONVERT</code> – converts particular expression to a specified .NET
+    Framework type</li>
 
-	<li><code>LEN</code> – gets the length of a string</li>
+    <li><code>LEN</code> – gets the length of a string</li>
 
-	<li><code>ISNULL</code> – checks an expression and either returns the checked
-	expression or a replacement value</li>
+    <li><code>ISNULL</code> – checks an expression and either returns the checked
+    expression or a replacement value</li>
 
-	<li><code>IIF</code> – gets one of two values depending on the result of a
-	logical expression</li>
+    <li><code>IIF</code> – gets one of two values depending on the result of a
+    logical expression</li>
 
-	<li><code>TRIM</code> – removes all leading and trailing blank characters
-	like \r, \n, \t, ‚ ‘</li>
+    <li><code>TRIM</code> – removes all leading and trailing blank characters
+    like \r, \n, \t, ‚ ‘</li>
 
-	<li><code>SUBSTRING</code> – gets a sub-string of a specified length,
-	starting at a specified point in the string</li>
+    <li><code>SUBSTRING</code> – gets a sub-string of a specified length,
+    starting at a specified point in the string</li>
 </ul>
 
     <h2>See also</h2>
 
 <ul>
-	<li><a
-	href="http://msdn2.microsoft.com/en-us/library/system.data.dataview.rowfilter.aspx">DataView.RowFil­ter</a> –
-	MSDN – expression used to filter rows</li>
+    <li><a
+    href="http://msdn2.microsoft.com/en-us/library/system.data.dataview.rowfilter.aspx">DataView.RowFil­ter</a> –
+    MSDN – expression used to filter rows</li>
 
-	<li><a
-	href="http://msdn2.microsoft.com/en-us/library/system.data.datacolumn.expression.aspx">DataColumn.Ex­pression</a> –
-	MSDN – syntax description</li>
+    <li><a
+    href="http://msdn2.microsoft.com/en-us/library/system.data.datacolumn.expression.aspx">DataColumn.Ex­pression</a> –
+    MSDN – syntax description</li>
 </ul>
 
 <p class="author">By <a href="/jan-slama/">Jan Slama</a>, 15-Mar-2008</p>
@@ -435,4 +436,4 @@ Copyright &copy; 2010 Jan Slama. </div>
 </div>
 </body>
 </html>
-
+</HTML>

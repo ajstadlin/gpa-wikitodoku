@@ -1,5 +1,5 @@
+<HTML>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head profile="htt
@@ -48,21 +48,21 @@ p://gmpg.org/xfn/11">
 
 </div>
 
-	<div id="content">			
+    <div id="content">          
 
-		<div class="post" id="post-63">
+        <div class="post" id="post-63">
 
             
 
-			<h2><a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/2009/10/29/the-smartgrid-goes-open-source/" rel="bookmark" title="Permanent Link: The Smartgrid Goes Open Source">The Smartgrid Goes Open Source</a></h2>
+            <h2><a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/2009/10/29/the-smartgrid-goes-open-source/" rel="bookmark" title="Permanent Link: The Smartgrid Goes Open Source">The Smartgrid Goes Open Source</a></h2>
 
-			<small>by Josh Patterson ~ October 29th, 2009. Filed under: <a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/category/distributed-file-systems/" title="View all posts in Distributed File Systems" rel="category tag">Distributed File Systems</a>,  <a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/category/hadoop/" title="View all posts in hadoop" rel="category tag">hadoop</a>,  <a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/category/openpdc/" title="View all posts in openPDC" rel="category tag">openPDC</a>,  <a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/category/smartgrid/" title="View all posts in smartgrid" rel="category tag">smartgrid</a>. </small>
+            <small>by Josh Patterson ~ October 29th, 2009. Filed under: <a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/category/distributed-file-systems/" title="View all posts in Distributed File Systems" rel="category tag">Distributed File Systems</a>,  <a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/category/hadoop/" title="View all posts in hadoop" rel="category tag">hadoop</a>,  <a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/category/openpdc/" title="View all posts in openPDC" rel="category tag">openPDC</a>,  <a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/category/smartgrid/" title="View all posts in smartgrid" rel="category tag">smartgrid</a>. </small>
 
-	
+    
 
-			<div class="entry">
+            <div class="entry">
 
-				<p class="MsoNormal" style="margin: 0in 0in 0pt;"> </p>
+                <p class="MsoNormal" style="margin: 0in 0in 0pt;"> </p>
 
 <blockquote>
 
@@ -154,11 +154,11 @@ p://gmpg.org/xfn/11">
 
 <p>�</p>
 
-	<div class="navigation">
+    <div class="navigation">
 
-		<div class="alignleft">&laquo; <a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/2009/07/20/a-high-level-comparison-of-hadoop-and-dryad/">A High Level Comparison of Hadoop and Dryad</a></div>
+        <div class="alignleft">&laquo; <a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/2009/07/20/a-high-level-comparison-of-hadoop-and-dryad/">A High Level Comparison of Hadoop and Dryad</a></div>
 
-		<div class="alignright"><a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/2010/11/12/a-broad-overview-of-machine-learning/">A Broad Overview of Machine Learning</a> &raquo;<br />
+        <div class="alignright"><a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/2010/11/12/a-broad-overview-of-machine-learning/">A Broad Overview of Machine Learning</a> &raquo;<br />
 
             &amp;nbsp;</div>
 
@@ -182,11 +182,11 @@ p://gmpg.org/xfn/11">
 
 <div id="menu">
 
-	<ul class="fix">
+    <ul class="fix">
 
-			<li class="selected"><a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/">Home</a></li>
+            <li class="selected"><a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/">Home</a></li>
 
-			<li class="page_item page-item-2"><a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/about/" title="About">About</a></li>
+            <li class="page_item page-item-2"><a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/about/" title="About">About</a></li>
 
 <li class="page_item page-item-29"><a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/contact/" title="Contact">Contact</a></li>
 
@@ -198,7 +198,7 @@ p://gmpg.org/xfn/11">
 
 <li class="page_item page-item-5"><a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/resume/" title="Resume">Resume</a></li>
 
-	</ul>
+    </ul>
 
 </div><div id="left">
 
@@ -206,71 +206,71 @@ p://gmpg.org/xfn/11">
 
         
 
-<li class="categories"><h2>Categories</h2><ul>	<li class="cat-item cat-item-15"><a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/category/brainstorming/" title="View all posts filed under Brainstorming">Brainstorming</a>
+<li class="categories"><h2>Categories</h2><ul>  <li class="cat-item cat-item-15"><a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/category/brainstorming/" title="View all posts filed under Brainstorming">Brainstorming</a>
 
 </li>
 
-	<li class="cat-item cat-item-11"><a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/category/business/" title="View all posts filed under Business">Business</a>
+    <li class="cat-item cat-item-11"><a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/category/business/" title="View all posts filed under Business">Business</a>
 
 </li>
 
-	<li class="cat-item cat-item-4"><a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/category/data-portability/" title="View all posts filed under Data Portability">Data Portability</a>
+    <li class="cat-item cat-item-4"><a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/category/data-portability/" title="View all posts filed under Data Portability">Data Portability</a>
 
 </li>
 
-	<li class="cat-item cat-item-85"><a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/category/datamining/" title="View all posts filed under Datamining">Datamining</a>
+    <li class="cat-item cat-item-85"><a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/category/datamining/" title="View all posts filed under Datamining">Datamining</a>
 
 </li>
 
-	<li class="cat-item cat-item-71"><a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/category/distributed-file-systems/" title="View all posts filed under Distributed File Systems">Distributed File Systems</a>
+    <li class="cat-item cat-item-71"><a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/category/distributed-file-systems/" title="View all posts filed under Distributed File Systems">Distributed File Systems</a>
 
 </li>
 
-	<li class="cat-item cat-item-67"><a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/category/hadoop/" title="View all posts filed under hadoop">hadoop</a>
+    <li class="cat-item cat-item-67"><a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/category/hadoop/" title="View all posts filed under hadoop">hadoop</a>
 
 </li>
 
-	<li class="cat-item cat-item-10"><a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/category/linked-data/" title="View all posts filed under Linked Data">Linked Data</a>
+    <li class="cat-item cat-item-10"><a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/category/linked-data/" title="View all posts filed under Linked Data">Linked Data</a>
 
 </li>
 
-	<li class="cat-item cat-item-92"><a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/category/machine-learning/" title="View all posts filed under Machine Learning">Machine Learning</a>
+    <li class="cat-item cat-item-92"><a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/category/machine-learning/" title="View all posts filed under Machine Learning">Machine Learning</a>
 
 </li>
 
-	<li class="cat-item cat-item-80"><a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/category/openpdc/" title="View all posts filed under openPDC">openPDC</a>
+    <li class="cat-item cat-item-80"><a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/category/openpdc/" title="View all posts filed under openPDC">openPDC</a>
 
 </li>
 
-	<li class="cat-item cat-item-66"><a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/category/parallel-computing/" title="View all posts filed under Parallel Computing">Parallel Computing</a>
+    <li class="cat-item cat-item-66"><a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/category/parallel-computing/" title="View all posts filed under Parallel Computing">Parallel Computing</a>
 
 </li>
 
-	<li class="cat-item cat-item-57"><a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/category/research/" title="View all posts filed under Research">Research</a>
+    <li class="cat-item cat-item-57"><a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/category/research/" title="View all posts filed under Research">Research</a>
 
 </li>
 
-	<li class="cat-item cat-item-14"><a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/category/self-organization/" title="View all posts filed under Self Organization">Self Organization</a>
+    <li class="cat-item cat-item-14"><a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/category/self-organization/" title="View all posts filed under Self Organization">Self Organization</a>
 
 </li>
 
-	<li class="cat-item cat-item-79"><a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/category/smartgrid/" title="View all posts filed under smartgrid">smartgrid</a>
+    <li class="cat-item cat-item-79"><a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/category/smartgrid/" title="View all posts filed under smartgrid">smartgrid</a>
 
 </li>
 
-	<li class="cat-item cat-item-27"><a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/category/the-data-ecology/" title="View all posts filed under The Data Ecology">The Data Ecology</a>
+    <li class="cat-item cat-item-27"><a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/category/the-data-ecology/" title="View all posts filed under The Data Ecology">The Data Ecology</a>
 
 </li>
 
-	<li class="cat-item cat-item-56"><a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/category/the-evolution-of-computing/" title="View all posts filed under The Evolution of Computing">The Evolution of Computing</a>
+    <li class="cat-item cat-item-56"><a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/category/the-evolution-of-computing/" title="View all posts filed under The Evolution of Computing">The Evolution of Computing</a>
 
 </li>
 
-	<li class="cat-item cat-item-30"><a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/category/the-internet-os/" title="View all posts filed under The Internet OS">The Internet OS</a>
+    <li class="cat-item cat-item-30"><a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/category/the-internet-os/" title="View all posts filed under The Internet OS">The Internet OS</a>
 
 </li>
 
-	<li class="cat-item cat-item-16"><a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/category/wireless-mesh-networks/" title="View all posts filed under Wireless Mesh Networks">Wireless Mesh Networks</a>
+    <li class="cat-item cat-item-16"><a href="http://web.archive.org/web/20101220030539/http://jpatterson.floe.tv/index.php/category/wireless-mesh-networks/" title="View all posts filed under Wireless Mesh Networks">Wireless Mesh Networks</a>
 
 </li>
 
@@ -278,31 +278,31 @@ p://gmpg.org/xfn/11">
 
 <li><h2>Archives</h2>
 
-	<ul>
+    <ul>
 
-			<li><a href='/web/20101220030539/http://jpatterson.floe.tv/index.php/2010/11/' title='November 2010'>November 2010</a></li>
+            <li><a href='/web/20101220030539/http://jpatterson.floe.tv/index.php/2010/11/' title='November 2010'>November 2010</a></li>
 
-	<li><a href='/web/20101220030539/http://jpatterson.floe.tv/index.php/2009/10/' title='October 2009'>October 2009</a></li>
+    <li><a href='/web/20101220030539/http://jpatterson.floe.tv/index.php/2009/10/' title='October 2009'>October 2009</a></li>
 
-	<li><a href='/web/20101220030539/http://jpatterson.floe.tv/index.php/2009/07/' title='July 2009'>July 2009</a></li>
+    <li><a href='/web/20101220030539/http://jpatterson.floe.tv/index.php/2009/07/' title='July 2009'>July 2009</a></li>
 
-	<li><a href='/web/20101220030539/http://jpatterson.floe.tv/index.php/2009/04/' title='April 2009'>April 2009</a></li>
+    <li><a href='/web/20101220030539/http://jpatterson.floe.tv/index.php/2009/04/' title='April 2009'>April 2009</a></li>
 
-	<li><a href='/web/20101220030539/http://jpatterson.floe.tv/index.php/2009/01/' title='January 2009'>January 2009</a></li>
+    <li><a href='/web/20101220030539/http://jpatterson.floe.tv/index.php/2009/01/' title='January 2009'>January 2009</a></li>
 
-	<li><a href='/web/20101220030539/http://jpatterson.floe.tv/index.php/2008/12/' title='December 2008'>December 2008</a></li>
+    <li><a href='/web/20101220030539/http://jpatterson.floe.tv/index.php/2008/12/' title='December 2008'>December 2008</a></li>
 
-	<li><a href='/web/20101220030539/http://jpatterson.floe.tv/index.php/2008/11/' title='November 2008'>November 2008</a></li>
+    <li><a href='/web/20101220030539/http://jpatterson.floe.tv/index.php/2008/11/' title='November 2008'>November 2008</a></li>
 
-	<li><a href='/web/20101220030539/http://jpatterson.floe.tv/index.php/2008/09/' title='September 2008'>September 2008</a></li>
+    <li><a href='/web/20101220030539/http://jpatterson.floe.tv/index.php/2008/09/' title='September 2008'>September 2008</a></li>
 
-	<li><a href='/web/20101220030539/http://jpatterson.floe.tv/index.php/2008/08/' title='August 2008'>August 2008</a></li>
+    <li><a href='/web/20101220030539/http://jpatterson.floe.tv/index.php/2008/08/' title='August 2008'>August 2008</a></li>
 
-	<li><a href='/web/20101220030539/http://jpatterson.floe.tv/index.php/2008/06/' title='June 2008'>June 2008</a></li>
+    <li><a href='/web/20101220030539/http://jpatterson.floe.tv/index.php/2008/06/' title='June 2008'>June 2008</a></li>
 
-	<li><a href='/web/20101220030539/http://jpatterson.floe.tv/index.php/2008/05/' title='May 2008'>May 2008</a></li>
+    <li><a href='/web/20101220030539/http://jpatterson.floe.tv/index.php/2008/05/' title='May 2008'>May 2008</a></li>
 
-	</ul>
+    </ul>
 
 </li>
 
@@ -333,7 +333,6 @@ Copyright 2015 <a href="http://www.gridprotectionalliance.org">Grid Protection A
 </body>
 
 </html>
-
 <!--
 
      FILE ARCHIVED ON 3:05:39 Dec 20, 2010 AND RETRIEVED FROM THE
@@ -347,5 +346,4 @@ Copyright 2015 <a href="http://www.gridprotectionalliance.org">Grid Protection A
      SECTION 108(a)(3)).
 
 -->
-
-
+</HTML>

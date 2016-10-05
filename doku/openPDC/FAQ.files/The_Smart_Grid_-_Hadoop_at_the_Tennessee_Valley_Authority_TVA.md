@@ -1,5 +1,5 @@
+<HTML>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
 <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
 
 <head>
@@ -72,45 +72,45 @@
 
         </header>
 
-				
+                
 
-	<div role="main" class="main">
+    <div role="main" class="main">
 
-		<div class="wrapper">
+        <div class="wrapper">
 
-			<section class="two-col">
+            <section class="two-col">
 
 
 
-	
+    
 
 <section>
 
-			<h1 class="heading ">The Smart Grid: Hadoop at the Tennessee Valley Authority (TVA)</h1>
+            <h1 class="heading ">The Smart Grid: Hadoop at the Tennessee Valley Authority (TVA)</h1>
 
-			
+            
 
-			<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+            <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
 
-			
+            
 
-			<ul class="post-info">
+            <ul class="post-info">
 
-				<li>by <a href="http://blog.cloudera.com/blog/author/christophe/" title="Posts by Christophe Bisciglia" rel="author">Christophe Bisciglia</a></li>
+                <li>by <a href="http://blog.cloudera.com/blog/author/christophe/" title="Posts by Christophe Bisciglia" rel="author">Christophe Bisciglia</a></li>
 
-				<li>June 02, 2009</li>
+                <li>June 02, 2009</li>
 
-				<li class="comment"><a href="#comments">4 comments</a></li>
+                <li class="comment"><a href="#comments">4 comments</a></li>
 
-				
+                
 
-			</ul>
+            </ul>
 
-			
+            
 
-			<div class="text-block">
+            <div class="text-block">
 
-				<blockquote>
+                <blockquote>
 
 <div><em><br />
 
@@ -234,11 +234,11 @@ For the last few months, we&#8217;ve been working with the TVA to help them mana
 
 </div>
 
-<hr />		
+<hr />      
 
   <div class="comments comments-2">
 
-  	
+    
 
   <a name="comments"></a>
 
@@ -252,41 +252,41 @@ For the last few months, we&#8217;ve been working with the TVA to help them mana
 
   <ul class="comments-list">
 
-  	<li>
+    <li>
 
-		<em class="comment-date">
+        <em class="comment-date">
 
-			<a rel="nofollow" href="http://www.mmorggame.ru/">&#208;&#208;&#184;&#208;&#186;&#208;&#176;&#208;&#189;&#208;&#190;&#209;&#8364; &#208;&#160;&#208;&#176;&#208;&#177;&#208;&#184;&#208;&#189;&#208;&#190;&#208;&#178;</a> /
+            <a rel="nofollow" href="http://www.mmorggame.ru/">&#208;&#208;&#184;&#208;&#186;&#208;&#176;&#208;&#189;&#208;&#190;&#209;&#8364; &#208;&#160;&#208;&#176;&#208;&#177;&#208;&#184;&#208;&#189;&#208;&#190;&#208;&#178;</a> /
 
-			June 29, 2009 / 7:58 AM		</em>
+            June 29, 2009 / 7:58 AM     </em>
 
 <p>&#208;&#376;&#208;&#190;&#209;&#209;&#8218; &#208;&#191;&#208;&#190;&#208;&#189;&#209;&#8364;&#208;&#176;&#208;&#178;&#208;&#184;&#208;&#187;&#209;&#209;, &#208;&#191;&#208;&#184;&#209;&#710;&#208;&#184;&#209;&#8218;&#208;&#181; &#208;&#181;&#209;&#8240;&#208;&#181;. &#208;&#175; &#209; &#209;&#402;&#208;&#180;&#208;&#190;&#208;&#178;&#208;&#190;&#208;&#187;&#209;&#338;&#209;&#209;&#8218;&#208;&#178;&#208;&#184;&#208;&#181;&#208;&#188; &#208;&#191;&#209;&#8364;&#208;&#190;&#209;&#8225;&#209;&#8218;&#209;&#402;.</p>
 
-	</li>
+    </li>
 
-	<li>
+    <li>
 
-		<em class="comment-date">
+        <em class="comment-date">
 
-			<a rel="nofollow" href="">APOORV</a> /
+            <a rel="nofollow" href="">APOORV</a> /
 
-			October 25, 2009 / 7:53 AM		</em>
+            October 25, 2009 / 7:53 AM      </em>
 
 <p>How do today&#8217;s substation transmit information in case of power shortage to neighbouring substation for re-routing power.</p>
 
-	</li>
+    </li>
 
-	<li>
+    <li>
 
-		<em class="comment-date">
+        <em class="comment-date">
 
-			<a rel="nofollow" href="http://automation.liveautomatic.com">Insteon</a> /
+            <a rel="nofollow" href="http://automation.liveautomatic.com">Insteon</a> /
 
-			December 06, 2009 / 7:13 PM		</em>
+            December 06, 2009 / 7:13 PM     </em>
 
 <p>It&#8217;s an immense project and undertaking but the economic and environmental benefits of the smart grid will be well worth the efforts.  Kudos to all those involved (I&#8217;m a bit jealous).</p>
 
-	</li>
+    </li>
 
   </ul>
 
@@ -319,3 +319,4 @@ Copyright 2015 <a href="http://www.gridprotectionalliance.org">Grid Protection A
 </body>
 
 </html>
+</HTML>

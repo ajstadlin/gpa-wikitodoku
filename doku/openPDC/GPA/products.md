@@ -1,5 +1,4 @@
-
-
+<HTML>
 <html>
 
 <head>
@@ -338,7 +337,7 @@ pen source, utility, software, synchrophasor" />
 
         <nav>
 
-            <ul class="sf-menu" id="nav">					
+            <ul class="sf-menu" id="nav">                   
 
                 <li id="menu_home"><a href="default.asp">Home</a></li>
 
@@ -438,7 +437,7 @@ pen source, utility, software, synchrophasor" />
 
                     </ul>
 
-                </li>				
+                </li>               
 
             </ul>
 
@@ -490,7 +489,7 @@ pen source, utility, software, synchrophasor" />
 
         <table>
 
-		
+        
 
         <!-- begin product table -->
 
@@ -632,7 +631,7 @@ pen source, utility, software, synchrophasor" />
 
 </p>
 
-					
+                    
 
 <p>
 
@@ -758,15 +757,15 @@ pen source, utility, software, synchrophasor" />
 
 </p>
 
-					<h4>Videos</h4>
+                    <h4>Videos</h4>
 
 <p>
 
-						- <a href="http://youtu.be/hd8sksEDhAc" target="_blank">Installing the <em>open</em>PDC on Linux and Mac</a>, March 2015<br />
+                        - <a href="http://youtu.be/hd8sksEDhAc" target="_blank">Installing the <em>open</em>PDC on Linux and Mac</a>, March 2015<br />
 
-						- <a href="http://youtu.be/wcUWMv2iCyk" target="_blank">Automated gap filling with the <em>open</em>PDC and substationSBG</a>, March 2015<br />
+                        - <a href="http://youtu.be/wcUWMv2iCyk" target="_blank">Automated gap filling with the <em>open</em>PDC and substationSBG</a>, March 2015<br />
 
-						- <a href="http://youtu.be/2bqtGF_fXBM" target="_blank">The new OSIsoft Pi Adapter for the <em>open</em>PDC</a>, March 2015<br />
+                        - <a href="http://youtu.be/2bqtGF_fXBM" target="_blank">The new OSIsoft Pi Adapter for the <em>open</em>PDC</a>, March 2015<br />
 
                         - <a href="http://youtu.be/QIicc2If-DU" target="_blank">Installing the <em>open</em>PDC on a substation computer</a>, November 2013<br />
 
@@ -886,23 +885,23 @@ pen source, utility, software, synchrophasor" />
 
 <p>
 
-					<span style="float: left">
+                    <span style="float: left">
 
-						 <strong>PDQTracker</strong> – <a href="http://pdqtracker.codeplex.com/" target="_blank">http://pdqtracker.codeplex.com/</a><br />
+                         <strong>PDQTracker</strong> – <a href="http://pdqtracker.codeplex.com/" target="_blank">http://pdqtracker.codeplex.com/</a><br />
 
                         
 
-					</span>
+                    </span>
 
-					<span style="float: right">
+                    <span style="float: right">
 
-					   <a href="http://pdqtracker.codeplex.com/" border="0" target="_blank"><img src="images/downloads-docs2.png"></a>
+                       <a href="http://pdqtracker.codeplex.com/" border="0" target="_blank"><img src="images/downloads-docs2.png"></a>
 
-					</span>
+                    </span>
 
-					<br />
+                    <br />
 
-					<em>(Scheduled for beta release Summer 2015)</em>
+                    <em>(Scheduled for beta release Summer 2015)</em>
 
 </p>
 
@@ -976,19 +975,19 @@ pen source, utility, software, synchrophasor" />
 
 <p>
 
-					<span style="float: left">
+                    <span style="float: left">
 
-						  <strong>Stream Splitter</strong> – <a href="http://phasorsplitter.codeplex.com/" target="_blank">http://phasorsplitter.codeplex.com/</a>                
+                          <strong>Stream Splitter</strong> – <a href="http://phasorsplitter.codeplex.com/" target="_blank">http://phasorsplitter.codeplex.com/</a>                
 
-					</span>
+                    </span>
 
-					<span style="float: right">
+                    <span style="float: right">
 
-					  <a href="http://phasorsplitter.codeplex.com/" border="0" target="_blank"><img src="images/downloads-docs2.png"></a>
+                      <a href="http://phasorsplitter.codeplex.com/" border="0" target="_blank"><img src="images/downloads-docs2.png"></a>
 
-					</span>
+                    </span>
 
-					<br />
+                    <br />
 
 </p>
 
@@ -1152,23 +1151,23 @@ pen source, utility, software, synchrophasor" />
 
 <p>
 
-					<span style="float: left">
+                    <span style="float: left">
 
-						<strong><em>open</em>Historian 2.0</strong> – <a href="http://openhistorian.codeplex.com/" target="_blank">http://www.openhistorian.com/</a>
+                        <strong><em>open</em>Historian 2.0</strong> – <a href="http://openhistorian.codeplex.com/" target="_blank">http://www.openhistorian.com/</a>
 
                         
 
-					</span>
+                    </span>
 
-					<span style="float: right">
+                    <span style="float: right">
 
-					   <a href="http://openhistorian.codeplex.com/" border="0" target="_blank"><img src="images/downloads-docs2.png"></a>
+                       <a href="http://openhistorian.codeplex.com/" border="0" target="_blank"><img src="images/downloads-docs2.png"></a>
 
-					</span>
+                    </span>
 
-					<br />
+                    <br />
 
-					 <em>(Version 2.0 Beta)</em>
+                     <em>(Version 2.0 Beta)</em>
 
 </p>
 
@@ -1250,21 +1249,21 @@ pen source, utility, software, synchrophasor" />
 
 <p>
 
-							Three utilities are currently available to assist in using the <em>open</em>Historian 2.  They are included as part of the openHistorian 
+                            Three utilities are currently available to assist in using the <em>open</em>Historian 2.  They are included as part of the openHistorian 
 
-							project on codePlex.
+                            project on codePlex.
 
 </p>
 
-						<ul>
+                        <ul>
 
-							<li>Data <strong>Migration</strong> Utility - Converts openHistorian 1.0 / DatAWAre Archives to openHistorian 2.0 Format - View <a href="images/products/HistorianMigration.png" target="_blank">Screen Shot</a></li>
+                            <li>Data <strong>Migration</strong> Utility - Converts openHistorian 1.0 / DatAWAre Archives to openHistorian 2.0 Format - View <a href="images/products/HistorianMigration.png" target="_blank">Screen Shot</a></li>
 
-							<li>Data <strong>Trending</strong> Tool - Queries Selected Historical Data for Visual Trending Using a Provided Date/Time Range - View <a href="images/products/HistorianTrending.png" target="_blank">Screen Shot</a><li>
+                            <li>Data <strong>Trending</strong> Tool - Queries Selected Historical Data for Visual Trending Using a Provided Date/Time Range - View <a href="images/products/HistorianTrending.png" target="_blank">Screen Shot</a><li>
 
-							<li>Data <strong>Extraction</strong> Utility - Queries Selected Historian Data for Export to a CSV File Using a Provided Date/Time Range - <a href="images/products/HistorianExtraction.png" target="_blank">Screen Shot</a></li>
+                            <li>Data <strong>Extraction</strong> Utility - Queries Selected Historian Data for Export to a CSV File Using a Provided Date/Time Range - <a href="images/products/HistorianExtraction.png" target="_blank">Screen Shot</a></li>
 
-						</ul>
+                        </ul>
 
 </div>
 
@@ -1352,65 +1351,65 @@ pen source, utility, software, synchrophasor" />
 
 </p>
 
-						<table class="simpleTable">
+                        <table class="simpleTable">
 
-						<tr><td style="text-align:center">
+                        <tr><td style="text-align:center">
 
-								<a href="http://sourceforge.net/projects/epriopenpqdashboard/" target="_blank"><img src="images/products/PQDashboard.png" width="150"></a>
+                                <a href="http://sourceforge.net/projects/epriopenpqdashboard/" target="_blank"><img src="images/products/PQDashboard.png" width="150"></a>
 
-							</td>
+                            </td>
 
-							<td>
+                            <td>
 
-								&nbsp;&nbsp;
+                                &nbsp;&nbsp;
 
-							</td>
+                            </td>
 
-							<td><a href="http://sourceforge.net/projects/epriopenpqdashboard/" target="_blank">EPRI's Open PQ Dashboard</a> is a web-based visualization tool for
+                            <td><a href="http://sourceforge.net/projects/epriopenpqdashboard/" target="_blank">EPRI's Open PQ Dashboard</a> is a web-based visualization tool for
 
-							PQ and DFR data that is housed in the <em>open</em>XDA data base.  It's designed to allow users to start from an enterprise-wide view of PQ and drill down into the details
+                            PQ and DFR data that is housed in the <em>open</em>XDA data base.  It's designed to allow users to start from an enterprise-wide view of PQ and drill down into the details
 
-							of individual events or power quality issues.
+                            of individual events or power quality issues.
 
-							</td></tr>
+                            </td></tr>
 
-						</table>
+                        </table>
 
-						
+                        
 
-						<table class="simpleTable">
+                        <table class="simpleTable">
 
-						<tr><td style="text-align:center">
+                        <tr><td style="text-align:center">
 
-								<a href="https://openpqdif.codeplex.com/" target="_blank"><img src="images/products/openPQDIF.png" width="150"></a>
+                                <a href="https://openpqdif.codeplex.com/" target="_blank"><img src="images/products/openPQDIF.png" width="150"></a>
 
-							</td>
+                            </td>
 
-							<td>
+                            <td>
 
-								&nbsp;&nbsp;
+                                &nbsp;&nbsp;
 
-							</td>
+                            </td>
 
-							<td>
+                            <td>
 
-								<a href="https://openpqdif.codeplex.com/" target="_blank">open PQDIF</a> provides a way for .net developers to 
+                                <a href="https://openpqdif.codeplex.com/" target="_blank">open PQDIF</a> provides a way for .net developers to 
 
-								easily parse <a href="http://grouper.ieee.org/groups/1159/3/" target="_blank">PQDIF files</a> (IEEE 1159.3-2003).
+                                easily parse <a href="http://grouper.ieee.org/groups/1159/3/" target="_blank">PQDIF files</a> (IEEE 1159.3-2003).
 
-								This parser is included in the
+                                This parser is included in the
 
-								<a href="technology.asp#GSF">Grid Solutions Framework</a>. It's also available
+                                <a href="technology.asp#GSF">Grid Solutions Framework</a>. It's also available
 
-								as a <a href="https://www.nuget.org/packages/GSF.PQDIF/2.1.66-beta" target="_blank">separate nuget package</a>.
+                                as a <a href="https://www.nuget.org/packages/GSF.PQDIF/2.1.66-beta" target="_blank">separate nuget package</a>.
 
-							</td></tr>
+                            </td></tr>
 
-						</table>
+                        </table>
 
-						
+                        
 
-						<!--
+                        <!--
 
                       
 
@@ -1562,7 +1561,7 @@ pen source, utility, software, synchrophasor" />
 
                             <a href="https://www.bro.org/" target="_blank">Bro</a>, an open source network analysis platform, is the core engine
 
-							to be used by ARMORE to inspect network packets. Bro conducts semantic analysis of network
+                            to be used by ARMORE to inspect network packets. Bro conducts semantic analysis of network
 
                             traffic in process control and other networks. With Bro integrated within it, ARMORE will provide the ability to
 
@@ -1584,7 +1583,7 @@ pen source, utility, software, synchrophasor" />
 
 <p>
 
-							See: <a href="docs\products\armore\DOE%20ARMORE%20Factsheet%20-%20Sept%202014.pdf">DOE CEDS Program FactSheet</a>
+                            See: <a href="docs\products\armore\DOE%20ARMORE%20Factsheet%20-%20Sept%202014.pdf">DOE CEDS Program FactSheet</a>
 
 </p>
 
@@ -1658,7 +1657,7 @@ pen source, utility, software, synchrophasor" />
 
                         <br/>
 
-                        Screen Shot of the PMU Connection Tester					
+                        Screen Shot of the PMU Connection Tester                    
 
 </p>
 
@@ -1672,7 +1671,7 @@ pen source, utility, software, synchrophasor" />
 
                         <br/>                        
 
-                        Screen Shot of the GEP Subscription Tester					
+                        Screen Shot of the GEP Subscription Tester                  
 
 </p>
 
@@ -1821,3 +1820,4 @@ Copyright 2015 <a href="http://www.gridprotectionalliance.org">Grid Protection A
 </body>
 
 </html>
+</HTML>

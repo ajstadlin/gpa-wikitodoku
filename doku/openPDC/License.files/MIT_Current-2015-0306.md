@@ -1,3 +1,4 @@
+<HTML>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta charset="utf-8" />
@@ -34,3 +35,4 @@ Copyright Current (Started March 6, 2015) <a href="http://www.gridprotectionoall
 </div>
 </body>
 </html>
+</HTML>

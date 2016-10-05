@@ -1,7 +1,7 @@
 #!/bin/bash
 set +x
 set -e
-## 10/04/16 Updated
+## 10/04/16 Updated, markdown files in subfolders included
 ## Note:  pandoc does not recognize ~/ as the /home/user folder, 
 
 # Relative Path assumes we are running from the path: /home/aj/GPA/gpa-wikitodoku 
@@ -187,6 +187,112 @@ pandoc --from=markdown_github --to=dokuwiki --output='./doku/openPDC/Settings_fo
 pandoc --from=markdown_github --to=dokuwiki --output='./doku/openPDC/Use_and_Configuration_Guides.md' '../openPDC/Source/Documentation/wiki/Use_and_Configuration_Guides.md'  || :
 
 pandoc --from=markdown_github --to=dokuwiki --output='./doku/openPDC/Using_a_Gateway_Style_Connection_between_openPDCs_and_for_openPGs.md' '../openPDC/Source/Documentation/wiki/Using_a_Gateway_Style_Connection_between_openPDCs_and_for_openPGs.md'  || :
+
+# Markdown files in static Subfolders need to be deleted first
+
+
+rm -f ./doku/openPDC/GPA/products.md
+rm -f ./doku/openPDC/Remote_Console_Security.files/Remote_Console_Security_Version_3.md
+rm -f ./doku/openPDC/Developers_Using_Hadoop.files/mapred_tutorial..md
+rm -f ./doku/openPDC/License.files/MIT_Current-2015-0306.md
+rm -f ./doku/openPDC/License.files/EPL_2015-0306-2010-0820.md
+rm -f ./doku/openPDC/FAQ.files/How_to_Use_Open-Source_Hadoop_for_the_Smart_Grid.md
+rm -f ./doku/openPDC/FAQ.files/JPatterson_floe_tv_2009-10-29_the-smartgrid-goes-open-source.md
+rm -f ./doku/openPDC/FAQ.files/Simple_Moving_Average_Secondary_Sort_and_MapReduce_Part_2.md
+rm -f ./doku/openPDC/FAQ.files/The_Smart_Grid_-_Hadoop_at_the_Tennessee_Valley_Authority_TVA.md
+rm -f ./doku/openPDC/FAQ.files/Open-source_Hadoop_powers_Tennessee_smart_grid.md
+rm -f ./doku/openPDC/FAQ.files/Simple_Moving_Average_Secondary_Sort_and_MapReduce_Part_3.md
+rm -f ./doku/openPDC/FAQ.files/The_Android_of_the_Smart_Grid_openPDC.md
+rm -f ./doku/openPDC/FAQ.files/OSCON_Data_2011_-_Lumberyard.md
+rm -f ./doku/openPDC/FAQ.files/Simple_Moving_Average_Secondary_Sort_and_MapReduce_Part_1.md
+rm -f ./doku/openPDC/FAQ.files/Hadoop_As_The_Platform_For_The_Smartgrid_At_TVA.md
+rm -f ./doku/openPDC/Developers_Multiple_Adapter_Synchronization.files/Discussion_433859.md
+rm -f ./doku/openPDC/Contributors/priyankarjk.md
+rm -f ./doku/openPDC/Contributors/patpentz.md
+rm -f ./doku/openPDC/Contributors/ritchiecarroll.md
+rm -f ./doku/openPDC/Contributors/kevinjones.md
+rm -f ./doku/openPDC/Contributors/rrobertson.md
+rm -f ./doku/openPDC/Contributors/avinash_e.md
+rm -f ./doku/openPDC/Contributors/jmartinbeg.md
+rm -f ./doku/openPDC/Contributors/arkrohne.md
+rm -f ./doku/openPDC/Contributors/ajstadlin.md
+rm -f ./doku/openPDC/Contributors/staphen.md
+rm -f ./doku/openPDC/Contributors/alexfoglia.md
+rm -f ./doku/openPDC/PMU_Connection_Tester.files/PMU_Connection_Tester.md
+rm -f ./doku/openPDC/Running_openPDC_on_a_Raspberry_Pi.files/linux.md
+rm -f ./doku/openPDC/Running_openPDC_on_a_Raspberry_Pi.files/sd-cards.md
+rm -f ./doku/openPDC/Running_openPDC_on_a_Raspberry_Pi.files/Mono-project_com_news_2015_03_07_mono-tls-vulnerability.md
+rm -f ./doku/openPDC/Running_openPDC_on_a_Raspberry_Pi.files/mac.md
+rm -f ./doku/openPDC/Running_openPDC_on_a_Raspberry_Pi.files/windows.md
+rm -f ./doku/openPDC/Data_Quality_Monitoring.files/DataView_RowFilter_Syntax.md
+
+pandoc --from=markdown_github --to=dokuwiki --output='./doku/openPDC/GPA/products.md' '../openPDC/Source/Documentation/wiki/GPA/products.md'  || :
+
+pandoc --from=markdown_github --to=dokuwiki --output='./doku/openPDC/Remote_Console_Security.files/Remote_Console_Security_Version_3.md' '../openPDC/Source/Documentation/wiki/Remote_Console_Security.files/Remote_Console_Security_Version_3.md'  || :
+
+pandoc --from=markdown_github --to=dokuwiki --output='./doku/openPDC/Developers_Using_Hadoop.files/mapred_tutorial..md' '../openPDC/Source/Documentation/wiki/Developers_Using_Hadoop.files/mapred_tutorial..md'  || :
+
+pandoc --from=markdown_github --to=dokuwiki --output='./doku/openPDC/License.files/MIT_Current-2015-0306.md' '../openPDC/Source/Documentation/wiki/License.files/MIT_Current-2015-0306.md'  || :
+
+pandoc --from=markdown_github --to=dokuwiki --output='./doku/openPDC/License.files/EPL_2015-0306-2010-0820.md' '../openPDC/Source/Documentation/wiki/License.files/EPL_2015-0306-2010-0820.md'  || :
+
+pandoc --from=markdown_github --to=dokuwiki --output='./doku/openPDC/FAQ.files/How_to_Use_Open-Source_Hadoop_for_the_Smart_Grid.md' '../openPDC/Source/Documentation/wiki/FAQ.files/How_to_Use_Open-Source_Hadoop_for_the_Smart_Grid.md'  || :
+
+pandoc --from=markdown_github --to=dokuwiki --output='./doku/openPDC/FAQ.files/JPatterson_floe_tv_2009-10-29_the-smartgrid-goes-open-source.md' '../openPDC/Source/Documentation/wiki/FAQ.files/JPatterson_floe_tv_2009-10-29_the-smartgrid-goes-open-source.md'  || :
+
+pandoc --from=markdown_github --to=dokuwiki --output='./doku/openPDC/FAQ.files/Simple_Moving_Average_Secondary_Sort_and_MapReduce_Part_2.md' '../openPDC/Source/Documentation/wiki/FAQ.files/Simple_Moving_Average_Secondary_Sort_and_MapReduce_Part_2.md'  || :
+
+pandoc --from=markdown_github --to=dokuwiki --output='./doku/openPDC/FAQ.files/The_Smart_Grid_-_Hadoop_at_the_Tennessee_Valley_Authority_TVA.md' '../openPDC/Source/Documentation/wiki/FAQ.files/The_Smart_Grid_-_Hadoop_at_the_Tennessee_Valley_Authority_TVA.md'  || :
+
+pandoc --from=markdown_github --to=dokuwiki --output='./doku/openPDC/FAQ.files/Open-source_Hadoop_powers_Tennessee_smart_grid.md' '../openPDC/Source/Documentation/wiki/FAQ.files/Open-source_Hadoop_powers_Tennessee_smart_grid.md'  || :
+
+pandoc --from=markdown_github --to=dokuwiki --output='./doku/openPDC/FAQ.files/Simple_Moving_Average_Secondary_Sort_and_MapReduce_Part_3.md' '../openPDC/Source/Documentation/wiki/FAQ.files/Simple_Moving_Average_Secondary_Sort_and_MapReduce_Part_3.md'  || :
+
+pandoc --from=markdown_github --to=dokuwiki --output='./doku/openPDC/FAQ.files/The_Android_of_the_Smart_Grid_openPDC.md' '../openPDC/Source/Documentation/wiki/FAQ.files/The_Android_of_the_Smart_Grid_openPDC.md'  || :
+
+pandoc --from=markdown_github --to=dokuwiki --output='./doku/openPDC/FAQ.files/OSCON_Data_2011_-_Lumberyard.md' '../openPDC/Source/Documentation/wiki/FAQ.files/OSCON_Data_2011_-_Lumberyard.md'  || :
+
+pandoc --from=markdown_github --to=dokuwiki --output='./doku/openPDC/FAQ.files/Simple_Moving_Average_Secondary_Sort_and_MapReduce_Part_1.md' '../openPDC/Source/Documentation/wiki/FAQ.files/Simple_Moving_Average_Secondary_Sort_and_MapReduce_Part_1.md'  || :
+
+pandoc --from=markdown_github --to=dokuwiki --output='./doku/openPDC/FAQ.files/Hadoop_As_The_Platform_For_The_Smartgrid_At_TVA.md' '../openPDC/Source/Documentation/wiki/FAQ.files/Hadoop_As_The_Platform_For_The_Smartgrid_At_TVA.md'  || :
+
+pandoc --from=markdown_github --to=dokuwiki --output='./doku/openPDC/Developers_Multiple_Adapter_Synchronization.files/Discussion_433859.md' '../openPDC/Source/Documentation/wiki/Developers_Multiple_Adapter_Synchronization.files/Discussion_433859.md'  || :
+
+pandoc --from=markdown_github --to=dokuwiki --output='./doku/openPDC/Contributors/priyankarjk.md' '../openPDC/Source/Documentation/wiki/Contributors/priyankarjk.md'  || :
+
+pandoc --from=markdown_github --to=dokuwiki --output='./doku/openPDC/Contributors/patpentz.md' '../openPDC/Source/Documentation/wiki/Contributors/patpentz.md'  || :
+
+pandoc --from=markdown_github --to=dokuwiki --output='./doku/openPDC/Contributors/ritchiecarroll.md' '../openPDC/Source/Documentation/wiki/Contributors/ritchiecarroll.md'  || :
+
+pandoc --from=markdown_github --to=dokuwiki --output='./doku/openPDC/Contributors/kevinjones.md' '../openPDC/Source/Documentation/wiki/Contributors/kevinjones.md'  || :
+
+pandoc --from=markdown_github --to=dokuwiki --output='./doku/openPDC/Contributors/rrobertson.md' '../openPDC/Source/Documentation/wiki/Contributors/rrobertson.md'  || :
+
+pandoc --from=markdown_github --to=dokuwiki --output='./doku/openPDC/Contributors/avinash_e.md' '../openPDC/Source/Documentation/wiki/Contributors/avinash_e.md'  || :
+
+pandoc --from=markdown_github --to=dokuwiki --output='./doku/openPDC/Contributors/jmartinbeg.md' '../openPDC/Source/Documentation/wiki/Contributors/jmartinbeg.md'  || :
+
+pandoc --from=markdown_github --to=dokuwiki --output='./doku/openPDC/Contributors/arkrohne.md' '../openPDC/Source/Documentation/wiki/Contributors/arkrohne.md'  || :
+
+pandoc --from=markdown_github --to=dokuwiki --output='./doku/openPDC/Contributors/ajstadlin.md' '../openPDC/Source/Documentation/wiki/Contributors/ajstadlin.md'  || :
+
+pandoc --from=markdown_github --to=dokuwiki --output='./doku/openPDC/Contributors/staphen.md' '../openPDC/Source/Documentation/wiki/Contributors/staphen.md'  || :
+
+pandoc --from=markdown_github --to=dokuwiki --output='./doku/openPDC/Contributors/alexfoglia.md' '../openPDC/Source/Documentation/wiki/Contributors/alexfoglia.md'  || :
+
+pandoc --from=markdown_github --to=dokuwiki --output='./doku/openPDC/PMU_Connection_Tester.files/PMU_Connection_Tester.md' '../openPDC/Source/Documentation/wiki/PMU_Connection_Tester.files/PMU_Connection_Tester.md'  || :
+
+pandoc --from=markdown_github --to=dokuwiki --output='./doku/openPDC/Running_openPDC_on_a_Raspberry_Pi.files/linux.md' '../openPDC/Source/Documentation/wiki/Running_openPDC_on_a_Raspberry_Pi.files/linux.md'  || :
+
+pandoc --from=markdown_github --to=dokuwiki --output='./doku/openPDC/Running_openPDC_on_a_Raspberry_Pi.files/sd-cards.md' '../openPDC/Source/Documentation/wiki/Running_openPDC_on_a_Raspberry_Pi.files/sd-cards.md'  || :
+
+pandoc --from=markdown_github --to=dokuwiki --output='./doku/openPDC/Running_openPDC_on_a_Raspberry_Pi.files/Mono-project_com_news_2015_03_07_mono-tls-vulnerability.md' '../openPDC/Source/Documentation/wiki/Running_openPDC_on_a_Raspberry_Pi.files/Mono-project_com_news_2015_03_07_mono-tls-vulnerability.md'  || :
+
+pandoc --from=markdown_github --to=dokuwiki --output='./doku/openPDC/Running_openPDC_on_a_Raspberry_Pi.files/mac.md' '../openPDC/Source/Documentation/wiki/Running_openPDC_on_a_Raspberry_Pi.files/mac.md'  || :
+
+pandoc --from=markdown_github --to=dokuwiki --output='./doku/openPDC/Running_openPDC_on_a_Raspberry_Pi.files/windows.md' '../openPDC/Source/Documentation/wiki/Running_openPDC_on_a_Raspberry_Pi.files/windows.md'  || :
+
+pandoc --from=markdown_github --to=dokuwiki --output='./doku/openPDC/Data_Quality_Monitoring.files/DataView_RowFilter_Syntax.md' '../openPDC/Source/Documentation/wiki/Data_Quality_Monitoring.files/DataView_RowFilter_Syntax.md'  || :
 
 
 exit

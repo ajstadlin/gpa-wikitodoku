@@ -1,5 +1,4 @@
-
-
+<HTML>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
@@ -293,3 +292,4 @@ Copyright 2015 <a href="http://www.gridprotectionalliance.org">Grid Protection A
 </body>
 
 </html>
+</HTML>

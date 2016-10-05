@@ -1,5 +1,4 @@
-
-
+<HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" class="" prefix="og: http://ogp.me/ns# profile: http://ogp.me/ns/profile#">
 
 <head>
@@ -34,7 +33,7 @@
 
 patabilityMode" http-equiv="X-UA-Compatible" content="IE=edge" />
 
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
     <title>The Open Source Phasor Data Concentrator - Custom Action Adapters - Unpublished Data</title>
 
@@ -739,3 +738,4 @@ Copyright 2015 <a href="http://www.gridprotectionalliance.org">Grid Protection A
 </body>
 
 </html>
+</HTML>

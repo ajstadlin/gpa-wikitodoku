@@ -1,5 +1,5 @@
+<HTML>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
 <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
 
 <head>
@@ -170,13 +170,13 @@ var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Cl
 
 <body class="single single-post postid-7110 single-format-standard devcenter">
 
-			
+            
 
-		
+        
 
-			
+            
 
-	<header id="site-head">
+    <header id="site-head">
 <nav class="properties">
             <div class="container">
                 <ul>
@@ -251,646 +251,646 @@ var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Cl
 
 
     <div class="form-holder">
-		
-	    <form action="http://cloudera.com/content/cloudera/en/search.html" id="site-search" method="get" novalidate> 
-	        <label for="q" class="visuallyhidden">Search</label> 
-	        <input type="search" name="q" id="q" placeholder="Search"><i class="icon-search"></i> 
-	    </form>
+        
+        <form action="http://cloudera.com/content/cloudera/en/search.html" id="site-search" method="get" novalidate> 
+            <label for="q" class="visuallyhidden">Search</label> 
+            <input type="search" name="q" id="q" placeholder="Search"><i class="icon-search"></i> 
+        </form>
 </div>
 </div><!--</div>-->
         </header>
-				
+                
 
-	<div role="main" class="main">
+    <div role="main" class="main">
 
-		<div class="wrapper">
+        <div class="wrapper">
 
-			<section class="two-col">
+            <section class="two-col">
 
 
 
-	
+    
 
 <aside class="left-col">
 
-				<nav>
-			<ul class=" ">
-			
-								
-							<li class="">
-				<a
-					href="http://www.cloudera.com/content/cloudera/en/why-cloudera/hadoop-and-big-data.html"
-					title="Hadoop &amp; Big Data"
-					class=""
-					target="_blank"				>
-					Hadoop &amp; Big Data				</a>
+                <nav>
+            <ul class=" ">
+            
+                                
+                            <li class="">
+                <a
+                    href="http://www.cloudera.com/content/cloudera/en/why-cloudera/hadoop-and-big-data.html"
+                    title="Hadoop &amp; Big Data"
+                    class=""
+                    target="_blank"             >
+                    Hadoop &amp; Big Data               </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="http://www.cloudera.com/content/cloudera/en/why-cloudera/our-customers.html"
-					title="Our Customers"
-					class=""
-					target="_blank"				>
-					Our Customers				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="http://www.cloudera.com/content/cloudera/en/why-cloudera/our-customers.html"
+                    title="Our Customers"
+                    class=""
+                    target="_blank"             >
+                    Our Customers               </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="http://www.cloudera.com/content/cloudera/en/why-cloudera/faqs.html"
-					title="FAQs"
-					class=""
-					target="_blank"				>
-					FAQs				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="http://www.cloudera.com/content/cloudera/en/why-cloudera/faqs.html"
+                    title="FAQs"
+                    class=""
+                    target="_blank"             >
+                    FAQs                </a>
 
-							</li>
-			
-					<li class="current">
-				<a
-					href="/blog/"
-					title="Blog"
-					class="blog"
-									>
-					Blog				</a>
+                            </li>
+            
+                    <li class="current">
+                <a
+                    href="/blog/"
+                    title="Blog"
+                    class="blog"
+                                    >
+                    Blog                </a>
 
-									<ul>
-									<li class="">
-				<a
-					href="/blog/category/accumulo/"
-					title="Accumulo (1)"
-					class=""
-									>
-					Accumulo (1)				</a>
+                                    <ul>
+                                    <li class="">
+                <a
+                    href="/blog/category/accumulo/"
+                    title="Accumulo (1)"
+                    class=""
+                                    >
+                    Accumulo (1)                </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/avro/"
-					title="Avro (17)"
-					class=""
-									>
-					Avro (17)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/avro/"
+                    title="Avro (17)"
+                    class=""
+                                    >
+                    Avro (17)               </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/bigtop/"
-					title="Bigtop (6)"
-					class=""
-									>
-					Bigtop (6)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/bigtop/"
+                    title="Bigtop (6)"
+                    class=""
+                                    >
+                    Bigtop (6)              </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/books/"
-					title="Books (12)"
-					class=""
-									>
-					Books (12)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/books/"
+                    title="Books (12)"
+                    class=""
+                                    >
+                    Books (12)              </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/careers/"
-					title="Careers (15)"
-					class=""
-									>
-					Careers (15)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/careers/"
+                    title="Careers (15)"
+                    class=""
+                                    >
+                    Careers (15)                </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/cdh/"
-					title="CDH (157)"
-					class=""
-									>
-					CDH (157)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/cdh/"
+                    title="CDH (157)"
+                    class=""
+                                    >
+                    CDH (157)               </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/cloud-2/"
-					title="Cloud (25)"
-					class=""
-									>
-					Cloud (25)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/cloud-2/"
+                    title="Cloud (25)"
+                    class=""
+                                    >
+                    Cloud (25)              </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/cloudera-labs/"
-					title="Cloudera Labs (10)"
-					class=""
-									>
-					Cloudera Labs (10)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/cloudera-labs/"
+                    title="Cloudera Labs (10)"
+                    class=""
+                                    >
+                    Cloudera Labs (10)              </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/cloudera-life/"
-					title="Cloudera Life (7)"
-					class=""
-									>
-					Cloudera Life (7)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/cloudera-life/"
+                    title="Cloudera Life (7)"
+                    class=""
+                                    >
+                    Cloudera Life (7)               </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/cloudera-manager/"
-					title="Cloudera Manager (77)"
-					class=""
-									>
-					Cloudera Manager (77)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/cloudera-manager/"
+                    title="Cloudera Manager (77)"
+                    class=""
+                                    >
+                    Cloudera Manager (77)               </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/community/"
-					title="Community (221)"
-					class=""
-									>
-					Community (221)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/community/"
+                    title="Community (221)"
+                    class=""
+                                    >
+                    Community (221)             </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/data-ingestion/"
-					title="Data Ingestion (22)"
-					class=""
-									>
-					Data Ingestion (22)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/data-ingestion/"
+                    title="Data Ingestion (22)"
+                    class=""
+                                    >
+                    Data Ingestion (22)             </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/data-science/"
-					title="Data Science (37)"
-					class=""
-									>
-					Data Science (37)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/data-science/"
+                    title="Data Science (37)"
+                    class=""
+                                    >
+                    Data Science (37)               </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/events/"
-					title="Events (55)"
-					class=""
-									>
-					Events (55)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/events/"
+                    title="Events (55)"
+                    class=""
+                                    >
+                    Events (55)             </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/flume/"
-					title="Flume (25)"
-					class=""
-									>
-					Flume (25)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/flume/"
+                    title="Flume (25)"
+                    class=""
+                                    >
+                    Flume (25)              </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/general/"
-					title="General (339)"
-					class=""
-									>
-					General (339)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/general/"
+                    title="General (339)"
+                    class=""
+                                    >
+                    General (339)               </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/graph-processing/"
-					title="Graph Processing (3)"
-					class=""
-									>
-					Graph Processing (3)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/graph-processing/"
+                    title="Graph Processing (3)"
+                    class=""
+                                    >
+                    Graph Processing (3)                </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/guest/"
-					title="Guest (114)"
-					class=""
-									>
-					Guest (114)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/guest/"
+                    title="Guest (114)"
+                    class=""
+                                    >
+                    Guest (114)             </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/hadoop/"
-					title="Hadoop (344)"
-					class=""
-									>
-					Hadoop (344)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/hadoop/"
+                    title="Hadoop (344)"
+                    class=""
+                                    >
+                    Hadoop (344)                </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/hardware/"
-					title="Hardware (6)"
-					class=""
-									>
-					Hardware (6)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/hardware/"
+                    title="Hardware (6)"
+                    class=""
+                                    >
+                    Hardware (6)                </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/hbase/"
-					title="HBase (151)"
-					class=""
-									>
-					HBase (151)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/hbase/"
+                    title="HBase (151)"
+                    class=""
+                                    >
+                    HBase (151)             </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/hdfs/"
-					title="HDFS (55)"
-					class=""
-									>
-					HDFS (55)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/hdfs/"
+                    title="HDFS (55)"
+                    class=""
+                                    >
+                    HDFS (55)               </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/hive/"
-					title="Hive (74)"
-					class=""
-									>
-					Hive (74)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/hive/"
+                    title="Hive (74)"
+                    class=""
+                                    >
+                    Hive (74)               </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/how-to/"
-					title="How-to (92)"
-					class=""
-									>
-					How-to (92)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/how-to/"
+                    title="How-to (92)"
+                    class=""
+                                    >
+                    How-to (92)             </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/hue/"
-					title="Hue (35)"
-					class=""
-									>
-					Hue (35)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/hue/"
+                    title="Hue (35)"
+                    class=""
+                                    >
+                    Hue (35)                </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/impala/"
-					title="Impala (94)"
-					class=""
-									>
-					Impala (94)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/impala/"
+                    title="Impala (94)"
+                    class=""
+                                    >
+                    Impala (94)             </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/kafka/"
-					title="Kafka (12)"
-					class=""
-									>
-					Kafka (12)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/kafka/"
+                    title="Kafka (12)"
+                    class=""
+                                    >
+                    Kafka (12)              </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/kite-sdk/"
-					title="Kite SDK (17)"
-					class=""
-									>
-					Kite SDK (17)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/kite-sdk/"
+                    title="Kite SDK (17)"
+                    class=""
+                                    >
+                    Kite SDK (17)               </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/mahout-2/"
-					title="Mahout (5)"
-					class=""
-									>
-					Mahout (5)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/mahout-2/"
+                    title="Mahout (5)"
+                    class=""
+                                    >
+                    Mahout (5)              </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/mapreduce/"
-					title="MapReduce (75)"
-					class=""
-									>
-					MapReduce (75)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/mapreduce/"
+                    title="MapReduce (75)"
+                    class=""
+                                    >
+                    MapReduce (75)              </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/meet-the-engineer/"
-					title="Meet The Engineer (23)"
-					class=""
-									>
-					Meet The Engineer (23)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/meet-the-engineer/"
+                    title="Meet The Engineer (23)"
+                    class=""
+                                    >
+                    Meet The Engineer (23)              </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/metadata-and-lineage/"
-					title="Metadata And Lineage (1)"
-					class=""
-									>
-					Metadata And Lineage (1)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/metadata-and-lineage/"
+                    title="Metadata And Lineage (1)"
+                    class=""
+                                    >
+                    Metadata And Lineage (1)                </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/oozie/"
-					title="Oozie (26)"
-					class=""
-									>
-					Oozie (26)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/oozie/"
+                    title="Oozie (26)"
+                    class=""
+                                    >
+                    Oozie (26)              </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/ops/"
-					title="Ops And DevOps (24)"
-					class=""
-									>
-					Ops And DevOps (24)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/ops/"
+                    title="Ops And DevOps (24)"
+                    class=""
+                                    >
+                    Ops And DevOps (24)             </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/parquet-2/"
-					title="Parquet (15)"
-					class=""
-									>
-					Parquet (15)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/parquet-2/"
+                    title="Parquet (15)"
+                    class=""
+                                    >
+                    Parquet (15)                </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/performance/"
-					title="Performance (16)"
-					class=""
-									>
-					Performance (16)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/performance/"
+                    title="Performance (16)"
+                    class=""
+                                    >
+                    Performance (16)                </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/pig/"
-					title="Pig (37)"
-					class=""
-									>
-					Pig (37)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/pig/"
+                    title="Pig (37)"
+                    class=""
+                                    >
+                    Pig (37)                </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/project-rhino/"
-					title="Project Rhino (5)"
-					class=""
-									>
-					Project Rhino (5)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/project-rhino/"
+                    title="Project Rhino (5)"
+                    class=""
+                                    >
+                    Project Rhino (5)               </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/quickstart-vm/"
-					title="QuickStart VM (6)"
-					class=""
-									>
-					QuickStart VM (6)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/quickstart-vm/"
+                    title="QuickStart VM (6)"
+                    class=""
+                                    >
+                    QuickStart VM (6)               </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/search/"
-					title="Search (26)"
-					class=""
-									>
-					Search (26)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/search/"
+                    title="Search (26)"
+                    class=""
+                                    >
+                    Search (26)             </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/security-2/"
-					title="Security (35)"
-					class=""
-									>
-					Security (35)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/security-2/"
+                    title="Security (35)"
+                    class=""
+                                    >
+                    Security (35)               </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/sentry/"
-					title="Sentry (3)"
-					class=""
-									>
-					Sentry (3)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/sentry/"
+                    title="Sentry (3)"
+                    class=""
+                                    >
+                    Sentry (3)              </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/spark/"
-					title="Spark (54)"
-					class=""
-									>
-					Spark (54)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/spark/"
+                    title="Spark (54)"
+                    class=""
+                                    >
+                    Spark (54)              </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/sqoop/"
-					title="Sqoop (24)"
-					class=""
-									>
-					Sqoop (24)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/sqoop/"
+                    title="Sqoop (24)"
+                    class=""
+                                    >
+                    Sqoop (24)              </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/support/"
-					title="Support (5)"
-					class=""
-									>
-					Support (5)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/support/"
+                    title="Support (5)"
+                    class=""
+                                    >
+                    Support (5)             </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/testing/"
-					title="Testing (9)"
-					class=""
-									>
-					Testing (9)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/testing/"
+                    title="Testing (9)"
+                    class=""
+                                    >
+                    Testing (9)             </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/tools/"
-					title="Tools (9)"
-					class=""
-									>
-					Tools (9)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/tools/"
+                    title="Tools (9)"
+                    class=""
+                                    >
+                    Tools (9)               </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/training-2/"
-					title="Training (46)"
-					class=""
-									>
-					Training (46)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/training-2/"
+                    title="Training (46)"
+                    class=""
+                                    >
+                    Training (46)               </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/use-case/"
-					title="Use Case (72)"
-					class=""
-									>
-					Use Case (72)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/use-case/"
+                    title="Use Case (72)"
+                    class=""
+                                    >
+                    Use Case (72)               </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/yarn/"
-					title="YARN (17)"
-					class=""
-									>
-					YARN (17)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/yarn/"
+                    title="YARN (17)"
+                    class=""
+                                    >
+                    YARN (17)               </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/blog/category/zookeeper/"
-					title="ZooKeeper (24)"
-					class=""
-									>
-					ZooKeeper (24)				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/blog/category/zookeeper/"
+                    title="ZooKeeper (24)"
+                    class=""
+                                    >
+                    ZooKeeper (24)              </a>
 
-							</li>
-			
-					<li class="">
-				<a
-					href="/archive/"
-					title="Archives by Month"
-					class=""
-									>
-					Archives by Month				</a>
+                            </li>
+            
+                    <li class="">
+                <a
+                    href="/archive/"
+                    title="Archives by Month"
+                    class=""
+                                    >
+                    Archives by Month               </a>
 
-							</li>
-			
-							</ul>
-							</li>
-			
-						
-			    
-			
-				<div style="clear:both"></div>
-			</ul>
-			</nav>
-			<div class="menu-special">
-				<ul>
-							
-				
-				
-		
-				
-		
-				
-				
-				
-				
+                            </li>
+            
+                            </ul>
+                            </li>
+            
+                        
+                
+            
+                <div style="clear:both"></div>
+            </ul>
+            </nav>
+            <div class="menu-special">
+                <ul>
+                            
+                
+                
+        
+                
+        
+                
+                
+                
+                
 
-		
-					</ul>
+        
+                    </ul>
 </div>
-			
+            
 </aside>
 
 
 
 <section>
 
-			<h1 class="heading ">Simple Moving Average, Secondary Sort, and MapReduce (Part 2)</h1>
+            <h1 class="heading ">Simple Moving Average, Secondary Sort, and MapReduce (Part 2)</h1>
 
-			
+            
 
-			<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+            <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
 
-			
+            
 
-			<ul class="post-info">
+            <ul class="post-info">
 
-				<li>by <a href="http://blog.cloudera.com/blog/author/josh-patterson/" title="Posts by Josh Patterson" rel="author">Josh Patterson</a></li>
+                <li>by <a href="http://blog.cloudera.com/blog/author/josh-patterson/" title="Posts by Josh Patterson" rel="author">Josh Patterson</a></li>
 
-				<li>March 16, 2011</li>
+                <li>March 16, 2011</li>
 
-				<li class="comment"><a href="#comments">2 comments</a></li>
+                <li class="comment"><a href="#comments">2 comments</a></li>
 
-				
+                
 
-			</ul>
+            </ul>
 
-			
+            
 
-			<div class="text-block">
+            <div class="text-block">
 
 <p><em>This is the second post of a three part blog series. If you would like to read &#8220;<a href="http://blog.cloudera.com/blog/2011/03/simple-moving-average-secondary-sort-and-mapreduce-part-1/">Part 1</a>,&#8221; please follow <a href="http://blog.cloudera.com/blog/2011/03/simple-moving-average-secondary-sort-and-mapreduce-part-1/">this link</a>. In this post we will be reviewing a simple moving average in contexts that should be familiar to the analyst not well versed in Hadoop as to establish a common ground with the reader from which we can move forward.</em></p>
 <h2>A Quick Primer on Simple Moving Average in Excel</h2>
@@ -899,36 +899,36 @@ var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Cl
 
 
 
-		<div id="crayon-560f61dfc3b12760090856" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" no-popup minimize scroll-mouseover" style=" max-width: 620px; margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+        <div id="crayon-560f61dfc3b12760090856" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" no-popup minimize scroll-mouseover" style=" max-width: 620px; margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
 
-		
+        
 
-			<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+            <div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
 
-			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div></div></div>
+            <div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div></div></div>
 
-			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+            <div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
 
-			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+            <div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
 =AVERAGE( [column-range] )</textarea></div>
 
-			<div class="crayon-main" style=" max-height: 500px; max-width: 620px;">
+            <div class="crayon-main" style=" max-height: 500px; max-width: 620px;">
 
-				<table class="crayon-table">
+                <table class="crayon-table">
 
-					<tr class="crayon-row">
+                    <tr class="crayon-row">
 
-				<td class="crayon-nums " data-settings="hide">
+                <td class="crayon-nums " data-settings="hide">
 
-					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-560f61dfc3b12760090856-1">1</div></div>
+                    <div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-560f61dfc3b12760090856-1">1</div></div>
 
-				</td>
+                </td>
 
-						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-line" id="crayon-560f61dfc3b12760090856-1"><span class="crayon-o">=</span><span class="crayon-e">AVERAGE</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-sy">[</span><span class="crayon-v">column</span><span class="crayon-o">-</span><span class="crayon-v">range</span><span class="crayon-sy">]</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div></div></td>
+                        <td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-line" id="crayon-560f61dfc3b12760090856-1"><span class="crayon-o">=</span><span class="crayon-e">AVERAGE</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-sy">[</span><span class="crayon-v">column</span><span class="crayon-o">-</span><span class="crayon-v">range</span><span class="crayon-sy">]</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div></div></td>
 
-					</tr>
+                    </tr>
 
-				</table>
+                </table>
 
 </div>
 
@@ -958,36 +958,36 @@ var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Cl
 
 
 
-		<div id="crayon-560f61dfc3b2e154365715" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" no-popup minimize scroll-mouseover" style=" max-width: 620px; margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+        <div id="crayon-560f61dfc3b2e154365715" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" no-popup minimize scroll-mouseover" style=" max-width: 620px; margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
 
-		
+        
 
-			<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+            <div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
 
-			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div></div></div>
+            <div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div></div></div>
 
-			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+            <div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
 
-			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+            <div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
 stock_data &lt;- read.csv(file="&lt;a href="https://github.com/jpatanooga/Caduceus/blob/master/data/movingaverage/yahoo_stock_AA_32_mini.csv"&gt;&lt;span style="color: #000000;"&gt;yahoo_stock_AA_32_mini.csv&lt;/span&gt;&lt;/a&gt;",head=TRUE,sep=",")</textarea></div>
 
-			<div class="crayon-main" style=" max-height: 500px; max-width: 620px;">
+            <div class="crayon-main" style=" max-height: 500px; max-width: 620px;">
 
-				<table class="crayon-table">
+                <table class="crayon-table">
 
-					<tr class="crayon-row">
+                    <tr class="crayon-row">
 
-				<td class="crayon-nums " data-settings="hide">
+                <td class="crayon-nums " data-settings="hide">
 
-					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-560f61dfc3b2e154365715-1">1</div></div>
+                    <div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-560f61dfc3b2e154365715-1">1</div></div>
 
-				</td>
+                </td>
 
-						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-line" id="crayon-560f61dfc3b2e154365715-1"><span class="crayon-v">stock_data</span><span class="crayon-h"> </span><span class="crayon-o">&lt;</span><span class="crayon-o">-</span><span class="crayon-h"> </span><span class="crayon-v">read</span><span class="crayon-sy">.</span><span class="crayon-e">csv</span><span class="crayon-sy">(</span><span class="crayon-v">file</span><span class="crayon-o">=</span><span class="crayon-s">"&lt;a href="</span><span class="crayon-v">https</span><span class="crayon-o">:</span><span class="crayon-c">//github.com/jpatanooga/Caduceus/blob/master/data/movingaverage/yahoo_stock_AA_32_mini.csv"&gt;&lt;span style="color: #000000;"&gt;yahoo_stock_AA_32_mini.csv&lt;/span&gt;&lt;/a&gt;",head=TRUE,sep=",")</span></div></div></td>
+                        <td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-line" id="crayon-560f61dfc3b2e154365715-1"><span class="crayon-v">stock_data</span><span class="crayon-h"> </span><span class="crayon-o">&lt;</span><span class="crayon-o">-</span><span class="crayon-h"> </span><span class="crayon-v">read</span><span class="crayon-sy">.</span><span class="crayon-e">csv</span><span class="crayon-sy">(</span><span class="crayon-v">file</span><span class="crayon-o">=</span><span class="crayon-s">"&lt;a href="</span><span class="crayon-v">https</span><span class="crayon-o">:</span><span class="crayon-c">//github.com/jpatanooga/Caduceus/blob/master/data/movingaverage/yahoo_stock_AA_32_mini.csv"&gt;&lt;span style="color: #000000;"&gt;yahoo_stock_AA_32_mini.csv&lt;/span&gt;&lt;/a&gt;",head=TRUE,sep=",")</span></div></div></td>
 
-					</tr>
+                    </tr>
 
-				</table>
+                </table>
 
 </div>
 
@@ -999,36 +999,36 @@ stock_data &lt;- read.csv(file="&lt;a href="https://github.com/jpatanooga/Caduce
 
 
 
-		<div id="crayon-560f61dfc3b39673159554" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" no-popup minimize scroll-mouseover" style=" max-width: 620px; margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+        <div id="crayon-560f61dfc3b39673159554" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" no-popup minimize scroll-mouseover" style=" max-width: 620px; margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
 
-		
+        
 
-			<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+            <div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
 
-			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div></div></div>
+            <div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div></div></div>
 
-			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+            <div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
 
-			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+            <div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
 sorted_stock_data &lt;- stock_data[order(stock_data$date) , ]</textarea></div>
 
-			<div class="crayon-main" style=" max-height: 500px; max-width: 620px;">
+            <div class="crayon-main" style=" max-height: 500px; max-width: 620px;">
 
-				<table class="crayon-table">
+                <table class="crayon-table">
 
-					<tr class="crayon-row">
+                    <tr class="crayon-row">
 
-				<td class="crayon-nums " data-settings="hide">
+                <td class="crayon-nums " data-settings="hide">
 
-					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-560f61dfc3b39673159554-1">1</div></div>
+                    <div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-560f61dfc3b39673159554-1">1</div></div>
 
-				</td>
+                </td>
 
-						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-line" id="crayon-560f61dfc3b39673159554-1"><span class="crayon-v">sorted_stock_data</span><span class="crayon-h"> </span><span class="crayon-o">&lt;</span><span class="crayon-o">-</span><span class="crayon-h"> </span><span class="crayon-v">stock_data</span><span class="crayon-sy">[</span><span class="crayon-e">order</span><span class="crayon-sy">(</span><span class="crayon-v">stock_data</span><span class="crayon-sy">$</span><span class="crayon-v">date</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-sy">]</span></div></div></td>
+                        <td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-line" id="crayon-560f61dfc3b39673159554-1"><span class="crayon-v">sorted_stock_data</span><span class="crayon-h"> </span><span class="crayon-o">&lt;</span><span class="crayon-o">-</span><span class="crayon-h"> </span><span class="crayon-v">stock_data</span><span class="crayon-sy">[</span><span class="crayon-e">order</span><span class="crayon-sy">(</span><span class="crayon-v">stock_data</span><span class="crayon-sy">$</span><span class="crayon-v">date</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-sy">]</span></div></div></td>
 
-					</tr>
+                    </tr>
 
-				</table>
+                </table>
 
 </div>
 
@@ -1040,36 +1040,36 @@ sorted_stock_data &lt;- stock_data[order(stock_data$date) , ]</textarea></div>
 
 
 
-		<div id="crayon-560f61dfc3b43320052317" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" no-popup minimize scroll-mouseover" style=" max-width: 620px; margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+        <div id="crayon-560f61dfc3b43320052317" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" no-popup minimize scroll-mouseover" style=" max-width: 620px; margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
 
-		
+        
 
-			<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+            <div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
 
-			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div></div></div>
+            <div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div></div></div>
 
-			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+            <div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
 
-			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+            <div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
 sma &lt;-&amp;#160;&amp;#160; SMA(sorted_stock_data[,"adj.close"], 30)</textarea></div>
 
-			<div class="crayon-main" style=" max-height: 500px; max-width: 620px;">
+            <div class="crayon-main" style=" max-height: 500px; max-width: 620px;">
 
-				<table class="crayon-table">
+                <table class="crayon-table">
 
-					<tr class="crayon-row">
+                    <tr class="crayon-row">
 
-				<td class="crayon-nums " data-settings="hide">
+                <td class="crayon-nums " data-settings="hide">
 
-					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-560f61dfc3b43320052317-1">1</div></div>
+                    <div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-560f61dfc3b43320052317-1">1</div></div>
 
-				</td>
+                </td>
 
-						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-line" id="crayon-560f61dfc3b43320052317-1"><span class="crayon-v">sma</span><span class="crayon-h"> </span><span class="crayon-o">&lt;</span><span class="crayon-o">-</span><span class="crayon-o">&amp;</span><span class="crayon-p">#160;&amp;#160; SMA(sorted_stock_data[,"adj.close"], 30)</span></div></div></td>
+                        <td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-line" id="crayon-560f61dfc3b43320052317-1"><span class="crayon-v">sma</span><span class="crayon-h"> </span><span class="crayon-o">&lt;</span><span class="crayon-o">-</span><span class="crayon-o">&amp;</span><span class="crayon-p">#160;&amp;#160; SMA(sorted_stock_data[,"adj.close"], 30)</span></div></div></td>
 
-					</tr>
+                    </tr>
 
-				</table>
+                </table>
 
 </div>
 
@@ -1084,36 +1084,36 @@ sma &lt;-&amp;#160;&amp;#160; SMA(sorted_stock_data[,"adj.close"], 30)</textarea
 
 
 
-		<div id="crayon-560f61dfc3b4c744646667" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" no-popup minimize scroll-mouseover" style=" max-width: 620px; margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+        <div id="crayon-560f61dfc3b4c744646667" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" no-popup minimize scroll-mouseover" style=" max-width: 620px; margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
 
-		
+        
 
-			<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+            <div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
 
-			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div></div></div>
+            <div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div></div></div>
 
-			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+            <div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
 
-			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+            <div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
 &gt; sorted_stock_data</textarea></div>
 
-			<div class="crayon-main" style=" max-height: 500px; max-width: 620px;">
+            <div class="crayon-main" style=" max-height: 500px; max-width: 620px;">
 
-				<table class="crayon-table">
+                <table class="crayon-table">
 
-					<tr class="crayon-row">
+                    <tr class="crayon-row">
 
-				<td class="crayon-nums " data-settings="hide">
+                <td class="crayon-nums " data-settings="hide">
 
-					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-560f61dfc3b4c744646667-1">1</div></div>
+                    <div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-560f61dfc3b4c744646667-1">1</div></div>
 
-				</td>
+                </td>
 
-						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-line" id="crayon-560f61dfc3b4c744646667-1"><span class="crayon-o">&gt;</span><span class="crayon-h"> </span><span class="crayon-v">sorted_stock_data</span></div></div></td>
+                        <td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-line" id="crayon-560f61dfc3b4c744646667-1"><span class="crayon-o">&gt;</span><span class="crayon-h"> </span><span class="crayon-v">sorted_stock_data</span></div></div></td>
 
-					</tr>
+                    </tr>
 
-				</table>
+                </table>
 
 </div>
 
@@ -1166,7 +1166,7 @@ sma &lt;-&amp;#160;&amp;#160; SMA(sorted_stock_data[,"adj.close"], 30)</textarea
 <p>The final portion of this three part blog series will explain how to use Hadoop&#8217;s MapReduce to calculate a Simple Moving Average. Then once you have applied the sample code to find a Simple Moving Average of the small example data set, we will move on to use this same code to parse over thirty years worth of all daily stock closing prices.</p>
 
 
-				<div class="social-buttons">
+                <div class="social-buttons">
 
 <span class='st_facebook_large' displayText='Facebook'></span>
 
@@ -1184,7 +1184,7 @@ sma &lt;-&amp;#160;&amp;#160; SMA(sorted_stock_data[,"adj.close"], 30)</textarea
 
 
 
-			<div class="grid_2" style="margin:0">
+            <div class="grid_2" style="margin:0">
 
   <div class="comments comments-2">
 
@@ -1193,11 +1193,11 @@ sma &lt;-&amp;#160;&amp;#160; SMA(sorted_stock_data[,"adj.close"], 30)</textarea
       <h4>Filed under:</h4>
 
       <ul class="post-categories">
-	<li><a href="http://blog.cloudera.com/blog/category/general/" title="View all posts in General" rel="category tag">General</a></li>
-	<li><a href="http://blog.cloudera.com/blog/category/hadoop/" title="View all posts in Hadoop" rel="category tag">Hadoop</a></li>
-	<li><a href="http://blog.cloudera.com/blog/category/mapreduce/" title="View all posts in MapReduce" rel="category tag">MapReduce</a></li></ul>  	</div>
+    <li><a href="http://blog.cloudera.com/blog/category/general/" title="View all posts in General" rel="category tag">General</a></li>
+    <li><a href="http://blog.cloudera.com/blog/category/hadoop/" title="View all posts in Hadoop" rel="category tag">Hadoop</a></li>
+    <li><a href="http://blog.cloudera.com/blog/category/mapreduce/" title="View all posts in MapReduce" rel="category tag">MapReduce</a></li></ul>      </div>
 
-  	
+    
 
   <a name="comments"></a>
 
@@ -1211,19 +1211,19 @@ sma &lt;-&amp;#160;&amp;#160; SMA(sorted_stock_data[,"adj.close"], 30)</textarea
 
   <ul class="comments-list">
 
-  	<li>
-		<em class="comment-date">
-			<a rel="nofollow" href="">Chris</a> /
-			July 12, 2011 / 1:05 PM		</em>
+    <li>
+        <em class="comment-date">
+            <a rel="nofollow" href="">Chris</a> /
+            July 12, 2011 / 1:05 PM     </em>
 <p>Great tutorial, when are you going to publish part three?</p>
-	</li>
+    </li>
 </li>
-	<li>
-		<em class="comment-date">
-			<a rel="nofollow" href="">Jon Zuanich</a> /
-			July 12, 2011 / 1:34 PM		</em>
+    <li>
+        <em class="comment-date">
+            <a rel="nofollow" href="">Jon Zuanich</a> /
+            July 12, 2011 / 1:34 PM     </em>
 <p>It is out my friend: <a href="http://blog.cloudera.com/blog/2011/04/simple-moving-average-secondary-sort-and-mapreduce-part-3/" rel="nofollow">http://blog.cloudera.com/blog/2011/04/simple-moving-average-secondary-sort-and-mapreduce-part-3/</a></p>
-	</li>
+    </li>
 </li>
   </ul>
 
@@ -1231,56 +1231,56 @@ sma &lt;-&amp;#160;&amp;#160; SMA(sorted_stock_data[,"adj.close"], 30)</textarea
 
   <form action="/wp-comments-post.php" method="POST">
 
-  	<div class="comment-form">
+    <div class="comment-form">
 
-  		<h4>Leave a comment</h4>
+        <h4>Leave a comment</h4>
 
-  		<div class="row">
+        <div class="row">
 
-  			<input type="text" value="" class="txt" name="author"/>
+            <input type="text" value="" class="txt" name="author"/>
 
-  			<label>Name <span>required</span></label>
-
-</div>
-
-  		<div class="row">
-
-  			<input type="text" value="" class="txt" name="email"/>
-
-  			<label class="published">Email <span>required</span> <em>(will not be published)</em></label>
+            <label>Name <span>required</span></label>
 
 </div>
 
-  		<div class="row">
+        <div class="row">
 
-  			<input type="text" value="" class="txt" name="url"/>
+            <input type="text" value="" class="txt" name="email"/>
 
-  			<label>Website</label>
-
-</div>
-
-  		<div class="row">
-
-  			<textarea rows="10" cols="30" class="area" name="comment"></textarea>
-
-  			<label>Comment</label>
+            <label class="published">Email <span>required</span> <em>(will not be published)</em></label>
 
 </div>
 
-  		<fieldset>
+        <div class="row">
 
-  			<input type="button" value="Leave Comment" class="btn cta"/>
+            <input type="text" value="" class="txt" name="url"/>
 
-  		</fieldset>
+            <label>Website</label>
 
 </div>
 
-  	<input type='hidden' name='comment_post_ID' value='7110' id='comment_post_ID' />
+        <div class="row">
+
+            <textarea rows="10" cols="30" class="area" name="comment"></textarea>
+
+            <label>Comment</label>
+
+</div>
+
+        <fieldset>
+
+            <input type="button" value="Leave Comment" class="btn cta"/>
+
+        </fieldset>
+
+</div>
+
+    <input type='hidden' name='comment_post_ID' value='7110' id='comment_post_ID' />
 <input type='hidden' name='comment_parent' id='comment_parent' value='0' />
-  	<p class="cptch_block"><label>Prove you're human!<span class="required"> *</span></label><br />		<input type="hidden" name="cptch_result" value="+mI=" />
-		<input type="hidden" name="cptch_time" value="1443848671" />
-		<input type="hidden" value="Version: 2.4" />
-		<input id="cptch_input" type="text" autocomplete="off" name="cptch_number" value="" maxlength="2" size="2" aria-required="true" required="required" style="margin-bottom:0;display:inline;font-size: 12px;width: 40px;" /> &times; 6 =  e&#105;g&#104;&#116;een	</p>  </form>
+    <p class="cptch_block"><label>Prove you're human!<span class="required"> *</span></label><br />     <input type="hidden" name="cptch_result" value="+mI=" />
+        <input type="hidden" name="cptch_time" value="1443848671" />
+        <input type="hidden" value="Version: 2.4" />
+        <input id="cptch_input" type="text" autocomplete="off" name="cptch_number" value="" maxlength="2" size="2" aria-required="true" required="required" style="margin-bottom:0;display:inline;font-size: 12px;width: 40px;" /> &times; 6 =  e&#105;g&#104;&#116;een </p>  </form>
 
 </div></section>
 
@@ -1507,3 +1507,4 @@ Copyright 2015 <a href="http://www.gridprotectionalliance.org">Grid Protection A
 <!--/HtmlToGmd.Foot-->
 
 </body></html>
+</HTML>

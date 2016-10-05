@@ -1,4 +1,4 @@
-
+<HTML>
 <!--[if IE 7]>
 <html class="ie ie7" lang="en-GB">
 <![endif]-->
@@ -31,7 +31,7 @@
     <script type="text/javascript">//<![CDATA[
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-46270871-1']);
-			            _gaq.push(['_trackPageview']);
+                        _gaq.push(['_trackPageview']);
         (function () {
             var ga = document.createElement('script');
             ga.type = 'text/javascript';
@@ -60,9 +60,9 @@
                     <li id="menu-item-6907" class="pink menu-item menu-item-type-custom menu-item-object-custom menu-item-6907"><a href="/forums/">Forums</a></li>
                     <li id="menu-item-6908" class="blue menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6908"><a href="/resources/">Resources</a>
                         <ul class="sub-menu">
-                        	<li id="menu-item-6911" class="blue2 menu-item menu-item-type-taxonomy menu-item-object-resource-category menu-item-6911"><a href="/resources/teach/">Teach</a></li>
-                        	<li id="menu-item-6909" class="blue3 menu-item menu-item-type-taxonomy menu-item-object-resource-category menu-item-6909"><a href="/resources/learn/">Learn</a></li>
-                        	<li id="menu-item-6910" class="blue4 menu-item menu-item-type-taxonomy menu-item-object-resource-category menu-item-6910"><a href="/resources/make/">Make</a></li>
+                            <li id="menu-item-6911" class="blue2 menu-item menu-item-type-taxonomy menu-item-object-resource-category menu-item-6911"><a href="/resources/teach/">Teach</a></li>
+                            <li id="menu-item-6909" class="blue3 menu-item menu-item-type-taxonomy menu-item-object-resource-category menu-item-6909"><a href="/resources/learn/">Learn</a></li>
+                            <li id="menu-item-6910" class="blue4 menu-item menu-item-type-taxonomy menu-item-object-resource-category menu-item-6910"><a href="/resources/make/">Make</a></li>
                         </ul>
                     </li>
                     <li id="menu-item-7165" class="menu mobile menu-item menu-item-type-custom menu-item-object-custom menu-item-7165"><a href="#">Menu</a></li>
@@ -187,3 +187,4 @@ diff -s from-sd-card.img 2015-09-24-raspbian-jessie.img</code></pre>
     </div>
 </body>
 </html>
+</HTML>

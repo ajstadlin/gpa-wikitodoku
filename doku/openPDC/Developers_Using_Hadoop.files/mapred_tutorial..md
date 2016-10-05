@@ -1,3 +1,4 @@
+<HTML>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -167,18 +168,18 @@ body {
            <table><tbody>
            <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
            <tr class="m">
-           	<td class="b" nowrap="nowrap">
-		
-		    <a href="/web/20121214195013/http://hadoop.apache.org/docs/r0.20.2/mapred_tutorial.html" title="14 Dec 2012">DEC</a>
-		
-		</td>
-		<td class="c" id="displayMonthEl" title="You are here: 7:50:45 Feb 1, 2013">FEB</td>
-		<td class="f" nowrap="nowrap">
-		
-		    <a href="/web/20130307162304/http://hadoop.apache.org/docs/r0.20.2/mapred_tutorial.html" title="7 Mar 2013"><strong>MAR</strong></a>
-		
+            <td class="b" nowrap="nowrap">
+        
+            <a href="/web/20121214195013/http://hadoop.apache.org/docs/r0.20.2/mapred_tutorial.html" title="14 Dec 2012">DEC</a>
+        
+        </td>
+        <td class="c" id="displayMonthEl" title="You are here: 7:50:45 Feb 1, 2013">FEB</td>
+        <td class="f" nowrap="nowrap">
+        
+            <a href="/web/20130307162304/http://hadoop.apache.org/docs/r0.20.2/mapred_tutorial.html" title="7 Mar 2013"><strong>MAR</strong></a>
+        
                 </td>
-	    </tr>
+        </tr>
            <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
            <tr class="d">
                <td class="b" nowrap="nowrap">
@@ -187,25 +188,25 @@ body {
                
                </td>
                <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 7:50:45 Feb 1, 2013">1</td>
-	       <td class="f" nowrap="nowrap">
+           <td class="f" nowrap="nowrap">
                
-		   <a href="/web/20130215103720/http://hadoop.apache.org/docs/r0.20.2/mapred_tutorial.html" title="10:37:20 Feb 15, 2013"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
-	       
-	       </td>
+           <a href="/web/20130215103720/http://hadoop.apache.org/docs/r0.20.2/mapred_tutorial.html" title="10:37:20 Feb 15, 2013"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+           
+           </td>
            </tr>
            <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
            <tr class="y">
-	       <td class="b" nowrap="nowrap">
+           <td class="b" nowrap="nowrap">
                
                    2012
                
                </td>
                <td class="c" id="displayYearEl" title="You are here: 7:50:45 Feb 1, 2013">2013</td>
-	       <td class="f" nowrap="nowrap">
+           <td class="f" nowrap="nowrap">
                
-	           <a href="/web/20140219065413/http://hadoop.apache.org/docs/r0.20.2/mapred_tutorial.html" title="19 Feb 2014"><strong>2014</strong></a>
-	       
-	       </td>
+               <a href="/web/20140219065413/http://hadoop.apache.org/docs/r0.20.2/mapred_tutorial.html" title="19 Feb 2014"><strong>2014</strong></a>
+           
+           </td>
            </tr>
            </tbody></table>
        </td>
@@ -218,13 +219,13 @@ body {
        <td class="k">
        <a href="" id="wm-graph-anchor">
        <div id="wm-ipp-sparkline" title="Explore captures for this URL">
-	 <img id="sparklineImgId" alt="sparklines"
-		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
-		 onmousemove="__wm.mv(event,this)"
-		 width="500"
-		 height="27"
-		 border="0"
-		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000002321_2013:1:321111101111_2014:-1:111211212020_2015:-1:100100001000" />
+     <img id="sparklineImgId" alt="sparklines"
+         onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+         onmousemove="__wm.mv(event,this)"
+         width="500"
+         height="27"
+         border="0"
+         src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000002321_2013:1:321111101111_2014:-1:111211212020_2015:-1:100100001000" />
 </div>
        </a>
        </td>
@@ -4412,11 +4413,6 @@ Copyright 2015 <a href="http://www.gridprotectionalliance.org">Grid Protection A
 
 </body>
 </html>
-
-
-
-
-
 <!--
      FILE ARCHIVED ON 7:50:45 Feb 1, 2013 AND RETRIEVED FROM THE
      INTERNET ARCHIVE ON 6:10:44 Oct 6, 2015.
@@ -4425,5 +4421,4 @@ Copyright 2015 <a href="http://www.gridprotectionalliance.org">Grid Protection A
      ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
      SECTION 108(a)(3)).
 -->
-
-
+</HTML>
