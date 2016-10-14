@@ -22,11 +22,13 @@
 # Target Files will typically be found in the targetDirectory:
 #   /home/username/GPA/dokuwiki/project
 #--------------------------------------------------------------
-# 10/12/16 AJ:  TODO:  Modified to detect and convert HTML files
+# 10/13/16 AJ:  Modified to detect and convert HTML files by "<html"
 # 10/11/16 AJ:  Test for Directory Exists before mkdir()
 # 10/10/16 AJ:  Derived from UpdateWiki.py, 
 #**************************************************************
 import os
+import shutil
+import string
 import subprocess
 
 sourceDirectory = ""
@@ -59,24 +61,39 @@ def UpdateWiki(sourcedir, targetdir):
             UpdateFolder(file.path)
 
         else:
-            #if file.name.endswith(".md"):
-                # TODO:  Check first line of .md file for <HTML> tag.
-                #        If <HTML> tag is found, replace the .md extension with .html
+            ishtml = False
+            if file.name.endswith(".md"):                
+                # Check first line of .md file for <HTML> tag.
+                topline = "";
+                mdFile = open(file.path, 'r')
+                topline = mdFile.readline().lower()
+                mdFile.close
+                print(">> Top == " + topline)
                 
-            if file.name.endswith(".md"):
+                if (topline.strip().find("<html") == 0):
+                    # <HTML> tag is found, replace the .md extension with .html
+                    ishtml = True
+                    #newname = os.path.splitext(file.path)[0] + ".html"
+                    #print("<HTML> Tag found at the start of the Markdown File")
+                    #print("Renaming " + file.path)
+                    #print("      to " + newname)
+                    # shutil.rename(file.path, newname)
+                
+                
+            if file.name.endswith(".md") and (not ishtml):
                 print("Converting from GitHub Markdown to Dokuwiki File = " + targetDirectory + "/" + os.path.splitext(file.name)[0] + ".dok")
                 subprocess.run(["pandoc", "-s", "-o", targetDirectory + "/" + os.path.splitext(file.name)[0] + ".dok", "-f", "markdown_github", "-t", "dokuwiki", file.path])
 
-            elif file.name.endswith(".htm") or file.name.endswith(".html"):
+            elif ishtml or file.name.endswith(".htm") or file.name.endswith(".html"):
                 print("Converting from HTML to Markdown = " + targetDirectory + "/" + os.path.splitext(file.name)[0] + ".xxx")
                 subprocess.run(["pandoc", "-s", "-o", targetDirectory + "/" + os.path.splitext(file.name)[0] + ".xxx", "-f", "html", "-t", "markdown_github", file.path])
                 print(" ... from Markdown to Dokuwiki File = " + targetDirectory + "/" + os.path.splitext(file.name)[0] + ".dok")
                 subprocess.run(["pandoc", "-s", "-o", targetDirectory + "/" + os.path.splitext(file.name)[0] + ".dok", "-f", "markdown_github", "-t", "dokuwiki", targetDirectory + "/" + os.path.splitext(file.name)[0] + ".xxx"])
-                # TODO os.filedelete(targetDirectory + "/" + os.path.splitext(file.name)[0] + ".xxx")
+                os.remove(targetDirectory + "/" + os.path.splitext(file.name)[0] + ".xxx")
 
             else:
                 print(" Copying to File = " + targetDirectory + "/" + file.name)
-                # TODO os.filecopy(file.path, targetDirectory + "/" + file.name)
+                shutil.copy2(file.path, targetDirectory + "/" + file.name)
 
 
 ###
@@ -102,24 +119,38 @@ def UpdateFolder(subdir):
             UpdateFolder(file.path)
             
         else:
-            #if file.name.endswith(".md"):
-                # TODO:  Check first line of .md file for <HTML> tag.
-                #        If <HTML> tag is found, replace the .md extension with .html
+            ishtml = False
+            if file.name.endswith(".md"):                
+                # Check first line of .md file for <HTML> tag.
+                topline = "";
+                mdFile = open(file.path, 'r')
+                topline = mdFile.readline().lower()
+                mdFile.close
+                print(">> Top == " + topline)
                 
-            if file.name.endswith(".md"):
+                if (topline.strip().find("<html") == 0):
+                    # <HTML> tag is found, replace the .md extension with .html
+                    ishtml = True
+                    #newname = os.path.splitext(file.path)[0] + ".html"
+                    #print("<HTML> Tag found at the start of the Markdown File")
+                    #print("Renaming " + file.path)
+                    #print("      to " + newname)
+                    # shutil.rename(file.path, newname)
+                
+            if file.name.endswith(".md") and (not ishtml):
                 print("Converting from GitHub Markdown to Dokuwiki File = " + targetDirectory + "/" + relativePath + "/" + os.path.splitext(file.name)[0] + ".dok")
                 subprocess.run(["pandoc", "-s", "-o", targetDirectory + "/" + relativePath + "/" + os.path.splitext(file.name)[0] + ".dok", "-f", "markdown_github", "-t", "dokuwiki", file.path])
 
-            elif file.name.endswith(".htm") or file.name.endswith(".html"):
+            elif ishtml or file.name.endswith(".htm") or file.name.endswith(".html"):
                 print("Converting from HTML to Markdown = " + targetDirectory + "/" + relativePath + "/" + os.path.splitext(file.name)[0] + ".xxx")
                 subprocess.run(["pandoc", "-s", "-o", targetDirectory + "/" + relativePath + "/" + os.path.splitext(file.name)[0] + ".xxx", "-f", "html", "-t", "markdown_github", file.path])
                 print(" ... from Markdown to Dokuwiki File = " + targetDirectory + "/" + relativePath + "/" + os.path.splitext(file.name)[0] + ".dok")
                 subprocess.run(["pandoc", "-s", "-o", targetDirectory + "/" + relativePath + "/" + os.path.splitext(file.name)[0] + ".dok", "-f", "markdown_github", "-t", "dokuwiki", targetDirectory + "/" + relativePath + "/" + os.path.splitext(file.name)[0] + ".xxx"])
-                # TODO os.filedelete(targetDirectory + "/" + relativePath + "/" + os.path.splitext(file.name)[0] + ".xxx")
+                os.remove(targetDirectory + "/" + relativePath + "/" + os.path.splitext(file.name)[0] + ".xxx")
 
             else:
                 print(" Copying to File = " + targetDirectory + "/" + relativePath  + "/" + file.name)
-                # TODO os.filecopy(file.path, targetDirectory + "/" + relativePath + "/" + file.name)
+                shutil.copy2(file.path, targetDirectory + "/" + relativePath + "/" + file.name)
 
 
 def WriteFile(file, relativePath):
@@ -128,7 +159,7 @@ def WriteFile(file, relativePath):
 
 
 
-print("WikiToDoku.py Utility, rev Oct 12, 2016")
+print("WikiToDoku.py Utility, rev Oct 13, 2016")
 print("=======================================")
 
 UpdateWiki("/home/aj/GPA/openPDC/Source/Documentation/wiki", "/home/aj/GPA/dokuwiki/openpdc")   # UpdateWiki(os.getcwd()) 
