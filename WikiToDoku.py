@@ -22,6 +22,7 @@
 # Target Files will typically be found in the targetDirectory:
 #   /home/username/GPA/dokuwiki/project
 #--------------------------------------------------------------
+# 10/15/16 AJ:  ToDo: Update Dokuwiki links to be relative
 # 10/13/16 AJ:  Modified to detect and convert HTML files by "<html"
 # 10/11/16 AJ:  Test for Directory Exists before mkdir()
 # 10/10/16 AJ:  Derived from UpdateWiki.py, 
@@ -31,6 +32,7 @@ import shutil
 import string
 import subprocess
 
+dokuwikiDirectory = "/home/aj/GPA/dokuwiki"
 sourceDirectory = ""
 targetDirectory = ""
 
@@ -159,7 +161,12 @@ def WriteFile(file, relativePath):
 
 
 
-print("WikiToDoku.py Utility, rev Oct 13, 2016")
+print("WikiToDoku.py Utility, rev Oct 15, 2016")
 print("=======================================")
 
+if not os.path.exists(dokuwikiDirectory):
+    print(" -> Creating Dokuwiki Directory... " + dokuwikiDirectory)
+    os.mkdir(dokuwikiDirectory)
+
+print("Processing openPDC Project")
 UpdateWiki("/home/aj/GPA/openPDC/Source/Documentation/wiki", "/home/aj/GPA/dokuwiki/openpdc")   # UpdateWiki(os.getcwd()) 
