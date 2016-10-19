@@ -1,14 +1,14 @@
 #**************************************************************
-# WikiToDoku.py
+# WikiToDoku2.py
 #==============================================================
 # Routines using pandoc to convert GitHub Markdown files to DokuWiki
 #
-# Note:  Requires Python 3.5.2 for os.scandir(),
-#        Not compatible with earlier Pythons
+# Note:  Using Python 3.5.2
+#        May not be compatible with earlier Pythons
 #
 # File Extensions:
 #   .md = markdown_github format
-#   .doku = dokuwiki format
+#   .txt = dokuwiki or straight text format
 #
 # GitHub markdown allows embedded HTML content.
 # This program will check for the <HTML> header tag in the .md files.
@@ -16,13 +16,28 @@
 # converted from html to markdown_github and then converted
 # from markdown_github to dokuwiki format in a 2 step process.
 #
-# Source Files will be typically found in the sourceDirectory:
-#   /home/username/GPA/Project/Source/Documentation/wiki
+# After conversion the GitHub blob and tree project link prefixes are removed
+# from the URLs to make them relative to the content root folder
 #
-# Target Files will typically be found in the targetDirectory:
-#   /home/username/GPA/dokuwiki/project
+# Source Files will be typically found in the sourceDirectory:
+#   /home/username/GPA/Project/Source/Documentation/wiki/
+#
+# Target Dokuwiki *.txt Files will typically be found in Directories
+# that are created as needed like the following:
+#   /home/username/GPA/dokuwiki/data/pages/projectnamespace
+#
+# Target Dokuwiki other Files will typically be found in Directories
+# that are created as needed like the following:
+#   /home/username/GPA/dokuwiki/data/media/projectnamespace
+#
+# Immutable directory and path values will typically include the suffix "/" path separator.
+# Variable directory and path values will typically not include a path separator suffix.
+#
+# Final dokuwiki/data/pages and media subfolders and file names need to all be in lower case!
+#
 #--------------------------------------------------------------
-# 10/15/16 AJ:  ToDo: Update Dokuwiki links to be relative
+# 10/18/16 AJ:  Using os.walk instead of os.scandir + recursion
+# 10/15/16 AJ:  ReplaceFileContent() function added
 # 10/13/16 AJ:  Modified to detect and convert HTML files by "<html"
 # 10/11/16 AJ:  Test for Directory Exists before mkdir()
 # 10/10/16 AJ:  Derived from UpdateWiki.py, 
@@ -32,141 +47,122 @@ import shutil
 import string
 import subprocess
 
-dokuwikiDirectory = "/home/aj/GPA/dokuwiki"
-sourceDirectory = ""
-targetDirectory = ""
+# Staging Directories for Dokuwiki Pages and Media data files
+dokuwikiDataPages = "/home/aj/GPA/dokuwiki/data/pages"
+dokuwikiDataMedia = "/home/aj/GPA/dokuwiki/data/media"
 
-###
-# Processes the top level of the source directory tree.
-# Subdirectories are recursively traversed
-#   and subdirectory tree structure is copied to the target directory tree
-# Markdown files are processed and saved in the target directories.
-# Non-Markdown files are copied to the target directories.
-# Paramters:                         # Examples:
-#    sourcedir = Project/Wiki        # /home/aj/GPA/openPDC/Source/Documentation/wiki
-#    targetdir = DokuWiki/Project    # /home/aj/GPA/dokuwiki/openpdc
-###
-def UpdateWiki(sourcedir, targetdir):
-    global sourceDirectory, targetDirectory
-    sourceDirectory = sourcedir
-    targetDirectory = targetdir
-    print("From Source Directory = " + sourceDirectory)
-    print("  to Target Directory = " + targetDirectory)
-        
-    if not os.path.exists(targetDirectory):
-        print(" -> Creating Target Directory... " + targetDirectory)
-        os.mkdir(targetDirectory)
+# Project Documentation Sources Dictionary
+# key = projectnamespace
+# value = [SourceDirectory, BlobLinkPrefix, TreeLinkPrefix]
+# Notes: Project URL Link Prefixes.
+#   These are replaced with "[[" in the documents within the Project's namespace in the Dokuwiki.
+#   These are replaced with "[[project:" in the documents within the other Projects' namespaces in the Dokuwiki.
+#   GitHub "blob" paths typically point to binary or other unhandled file formats or file extensions.
+#   GitHub "tree" paths usually point to documentation and code text files.
 
-    print("Processing...")
-    for file in os.scandir(sourceDirectory):
-        if file.is_dir(follow_symlinks=False) and file.name != ".git":
-            UpdateFolder(file.path)
-
-        else:
-            ishtml = False
-            if file.name.endswith(".md"):                
-                # Check first line of .md file for <HTML> tag.
-                topline = "";
-                mdFile = open(file.path, 'r')
-                topline = mdFile.readline().lower()
-                mdFile.close
-                print(">> Top == " + topline)
-                
-                if (topline.strip().find("<html") == 0):
-                    # <HTML> tag is found, replace the .md extension with .html
-                    ishtml = True
-                    #newname = os.path.splitext(file.path)[0] + ".html"
-                    #print("<HTML> Tag found at the start of the Markdown File")
-                    #print("Renaming " + file.path)
-                    #print("      to " + newname)
-                    # shutil.rename(file.path, newname)
-                
-                
-            if file.name.endswith(".md") and (not ishtml):
-                print("Converting from GitHub Markdown to Dokuwiki File = " + targetDirectory + "/" + os.path.splitext(file.name)[0] + ".dok")
-                subprocess.run(["pandoc", "-s", "-o", targetDirectory + "/" + os.path.splitext(file.name)[0] + ".dok", "-f", "markdown_github", "-t", "dokuwiki", file.path])
-
-            elif ishtml or file.name.endswith(".htm") or file.name.endswith(".html"):
-                print("Converting from HTML to Markdown = " + targetDirectory + "/" + os.path.splitext(file.name)[0] + ".xxx")
-                subprocess.run(["pandoc", "-s", "-o", targetDirectory + "/" + os.path.splitext(file.name)[0] + ".xxx", "-f", "html", "-t", "markdown_github", file.path])
-                print(" ... from Markdown to Dokuwiki File = " + targetDirectory + "/" + os.path.splitext(file.name)[0] + ".dok")
-                subprocess.run(["pandoc", "-s", "-o", targetDirectory + "/" + os.path.splitext(file.name)[0] + ".dok", "-f", "markdown_github", "-t", "dokuwiki", targetDirectory + "/" + os.path.splitext(file.name)[0] + ".xxx"])
-                os.remove(targetDirectory + "/" + os.path.splitext(file.name)[0] + ".xxx")
-
-            else:
-                print(" Copying to File = " + targetDirectory + "/" + file.name)
-                shutil.copy2(file.path, targetDirectory + "/" + file.name)
+sourceProjects = [
+["openpdc", "/home/aj/GPA/openPDC/Source/Documentation/wiki/",
+"[[https://github.com/GridProtectionAlliance/openPDC/blob/master/Source/Documentation/wiki/",
+"[[https://github.com/GridProtectionAlliance/openPDC/tree/master/Source/Documentation/wiki/"]
+]
 
 
-###
-# Processes a sub directory in the source directory tree.
-# Subdirectories are recursively traversed
-#   and subdirectory tree structure is copied to the target directory tree
-# Markdown files are processed and saved in the target directories.
-# Non-Markdown files are copied to the target directories.
-###
-def UpdateFolder(subdir):
-    global sourceDirectory, targetDirectory
-    relativePath = os.path.relpath(subdir, sourceDirectory).lower()
-    print("Relative Path = " + relativePath)
-    print("  From Source = " + subdir)
-    print("    to Target = " + targetDirectory + "/" + relativePath)
-    if not os.path.exists(targetDirectory + "/" + relativePath):
-        print(" -> Creating Target Subdirectory = " + targetDirectory + "/" + relativePath)
-        os.mkdir(targetDirectory + "/" + relativePath)
+def ReplaceFileContent(filePath, originalText, replacedText):
+    print(" >> Replacing " + originalText)
+    print("         with " + replacedText)
+    ioFile = open(filePath)
+    ioText = ioFile.read().replace(originalText, replacedText)
+    ioFile.close()
+    ioFile = open(filePath, "w")
+    ioFile.write(ioText)
+    ioFile.close()
 
-    for file in os.scandir(subdir):
-        if file.is_dir(follow_symlinks=False) and file.name != ".git":
-            print(">> Recursively Process Child Folder: " + file.path)
-            UpdateFolder(file.path)
+
+# RUN
+
+print("WikiToDoku2.py Utility, rev Oct 18, 2016")
+print("========================================")
+
+for proj in sourceProjects:
+    print("Project = " + proj[0])
+    print(" Source = " + proj[1])
+    print("   Blob = " + proj[2])
+    print("   Tree = " + proj[3])
+
+    # Create the dokuwiki/data/pages and media folders if needed
+    if not os.path.exists(dokuwikiDataPages):
+        print(" +> Creating Dokuwiki Data Pages Folder = " + dokuwikiDataPages)
+        os.makedirs(dokuwikiDataPages)
+
+    if not os.path.exists(dokuwikiDataMedia):
+        print(" +> Creating Dokuwiki Data Media Folder = " + dokuwikiDataMedia)
+        os.makedirs(dokuwikiDataMedia)
+
+    for projpath, projsubfolders, projfiles in os.walk(proj[1]):
+        # Check for and do not process folders prefixed with "." like ".git"
+        if not (projpath.find(".") == 0):
+            print("Project Source Subfolder > " + projpath)
             
-        else:
-            ishtml = False
-            if file.name.endswith(".md"):                
-                # Check first line of .md file for <HTML> tag.
-                topline = "";
-                mdFile = open(file.path, 'r')
-                topline = mdFile.readline().lower()
-                mdFile.close
-                print(">> Top == " + topline)
+            # Define the Dokuwiki Namespace for the Project subfolder in the Pages and Media folders
+            #   The pages folders will look like:  ... dokuwiki/data/{pages|media}/{projectname}/{subfolder}
+            projrelativefolder = projpath.replace(proj[1], "")
+            dokupagesfolder = dokuwikiDataPages + "/" + proj[0].lower() + "/" + projrelativefolder.lower()
+            dokumediafolder = dokuwikiDataMedia + "/" + proj[0].lower() + "/" + projrelativefolder.lower()
+
+            # Process the Files in the current projfolder
+            for projfile in projfiles:
+                print("  Source File > " + projfile)
+                projfilepath = projpath + "/" + projfile
                 
-                if (topline.strip().find("<html") == 0):
-                    # <HTML> tag is found, replace the .md extension with .html
-                    ishtml = True
-                    #newname = os.path.splitext(file.path)[0] + ".html"
-                    #print("<HTML> Tag found at the start of the Markdown File")
-                    #print("Renaming " + file.path)
-                    #print("      to " + newname)
-                    # shutil.rename(file.path, newname)
+                # Check for HTML format            
+                ishtml = False
+                if projfile.endswith(".md"):
+                    # Check first line of the file for an <HTML> tag.
+                    topline = "";
+                    iofile = open(projfilepath, 'r')
+                    # skipstrip blank lines until the top text line                    
+                    while ((topline == "") and not (topline == None)):
+                        topline = iofile.readline().lower().rstrip().lstrip()                
+                    iofile.close
                 
-            if file.name.endswith(".md") and (not ishtml):
-                print("Converting from GitHub Markdown to Dokuwiki File = " + targetDirectory + "/" + relativePath + "/" + os.path.splitext(file.name)[0] + ".dok")
-                subprocess.run(["pandoc", "-s", "-o", targetDirectory + "/" + relativePath + "/" + os.path.splitext(file.name)[0] + ".dok", "-f", "markdown_github", "-t", "dokuwiki", file.path])
+                    if (topline.strip().find("<html") == 0):
+                        # <HTML> tag is found, replace the .md extension with .html
+                        ishtml = True
 
-            elif ishtml or file.name.endswith(".htm") or file.name.endswith(".html"):
-                print("Converting from HTML to Markdown = " + targetDirectory + "/" + relativePath + "/" + os.path.splitext(file.name)[0] + ".xxx")
-                subprocess.run(["pandoc", "-s", "-o", targetDirectory + "/" + relativePath + "/" + os.path.splitext(file.name)[0] + ".xxx", "-f", "html", "-t", "markdown_github", file.path])
-                print(" ... from Markdown to Dokuwiki File = " + targetDirectory + "/" + relativePath + "/" + os.path.splitext(file.name)[0] + ".dok")
-                subprocess.run(["pandoc", "-s", "-o", targetDirectory + "/" + relativePath + "/" + os.path.splitext(file.name)[0] + ".dok", "-f", "markdown_github", "-t", "dokuwiki", targetDirectory + "/" + relativePath + "/" + os.path.splitext(file.name)[0] + ".xxx"])
-                os.remove(targetDirectory + "/" + relativePath + "/" + os.path.splitext(file.name)[0] + ".xxx")
+                if projfile.endswith(".md") and (not ishtml):
+                    if not os.path.exists(dokupagesfolder):
+                        print("  ++> Creating Dokuwiki Pages Subfolder > " + dokupagesfolder)
+                        os.makedirs(dokupagesfolder)
+                    dokupagesfile = dokupagesfolder + os.path.splitext(projfile)[0].lower() + ".txt"
+                    print(" *> Converting from GitHub Markdown to Dokuwiki File = " + dokupagesfile)
+                    subprocess.run(["pandoc", "-s", "-o", dokupagesfile, "-f", "markdown_github", "-t", "dokuwiki", projfilepath])
+                    ReplaceFileContent(dokupagesfile, proj[2], "[[")
+                    ReplaceFileContent(dokupagesfile, proj[3], "[[")
 
-            else:
-                print(" Copying to File = " + targetDirectory + "/" + relativePath  + "/" + file.name)
-                shutil.copy2(file.path, targetDirectory + "/" + relativePath + "/" + file.name)
+                elif ishtml or projfile.endswith(".htm") or projfile.endswith(".html"):
+                    if not os.path.exists(dokupagesfolder):
+                        print("  ++> Creating Dokuwiki Pages Subfolder > " + dokupagesfolder)
+                        os.makedirs(dokupagesfolder)
+                    dokutempfile = dokupagesfolder + os.path.splitext(projfile)[0].lower() + ".temp"
+                    print("Converting from HTML to Markdown = " + dokutempfile)
+                    subprocess.run(["pandoc", "-s", "-o", dokutempfile, "-f", "html", "-t", "markdown_github", projfilepath])
+                    dokupagesfile = dokupagesfolder + os.path.splitext(projfile)[0].lower() + ".txt"
+                    print(" ... from Markdown to Dokuwiki File = " + dokupagesfile)
+                    subprocess.run(["pandoc", "-s", "-o", dokupagesfile, "-f", "markdown_github", "-t", "dokuwiki", dokutempfile])
+                    os.remove(dokutempfile)
+                    ReplaceFileContent(dokupagesfile, proj[2], "[[")
+                    ReplaceFileContent(dokupagesfile, proj[3], "[[")
 
+                else:
+                    if not os.path.exists(dokumediafolder):
+                        print("  ++> Creating Dokuwiki Media Subfolder > " + dokumediafolder)
+                        os.makedirs(dokumediafolder)
+                    dokumediafile = dokumediafolder + projfile.lower();
+                    print(" **> Copying Media File = " + dokumediafile)
+                    if os.path.exists(dokumediafile):
+                        os.remove(dokumediafile)
+                    shutil.copy2(projfilepath, dokumediafile)
+           
+        
+            print("==========")
 
-def WriteFile(file, relativePath):
-    fileName = file.name.toLower()    
-    subprocess.run(["pandoc", "-s", "-o", targetDirectory + "/" + relativePath + "/" + os.path.splitext(file.name)[0] + ".dok", "-f", "markdown_github", "-t", "dokuwiki", file.path])
-
-
-
-print("WikiToDoku.py Utility, rev Oct 15, 2016")
-print("=======================================")
-
-if not os.path.exists(dokuwikiDirectory):
-    print(" -> Creating Dokuwiki Directory... " + dokuwikiDirectory)
-    os.mkdir(dokuwikiDirectory)
-
-print("Processing openPDC Project")
-UpdateWiki("/home/aj/GPA/openPDC/Source/Documentation/wiki", "/home/aj/GPA/dokuwiki/openpdc")   # UpdateWiki(os.getcwd()) 
