@@ -35,8 +35,20 @@
 #
 # Final dokuwiki/data/pages and media subfolders and file names need to all be in lower case!
 #
+# After this program is run, the following commands can be used to copy the content to Dokuwiki:
+# ## switch to root
+# su
+# ## Erase the previous project files
+# cd /var/lib/dokuwiki/data/pages
+# rm -Rf openpdc
+# cd /var/lib/dokuwiki/data/media
+# rm -Rf openpdc
+# ## Copy the new project files
+# cp -Rf /home/aj/GPA/dokuwiki/data/pages/* /var/lib/dokuwiki/data/pages/.
+# cp -Rf /home/aj/GPA/dokuwiki/data/media/* /var/lib/dokuwiki/data/media/.
+#
 #--------------------------------------------------------------
-# 10/18/16 AJ:  Using os.walk instead of os.scandir + recursion
+# 10/19/16 AJ:  Using os.walk instead of os.scandir + recursion
 # 10/15/16 AJ:  ReplaceFileContent() function added
 # 10/13/16 AJ:  Modified to detect and convert HTML files by "<html"
 # 10/11/16 AJ:  Test for Directory Exists before mkdir()
@@ -65,22 +77,11 @@ sourceProjects = [
 "[[https://github.com/GridProtectionAlliance/openPDC/blob/master/Source/Documentation/wiki/",
 "[[https://github.com/GridProtectionAlliance/openPDC/tree/master/Source/Documentation/wiki/"]
 ]
-
-
-def ReplaceFileContent(filePath, originalText, replacedText):
-    print(" >> Replacing " + originalText)
-    print("         with " + replacedText)
-    ioFile = open(filePath)
-    ioText = ioFile.read().replace(originalText, replacedText)
-    ioFile.close()
-    ioFile = open(filePath, "w")
-    ioFile.write(ioText)
-    ioFile.close()
-
+## TODO:  Extend this array with additional source projects
 
 # RUN
 
-print("WikiToDoku2.py Utility, rev Oct 18, 2016")
+print("WikiToDoku2.py Utility, rev Oct 19, 2016")
 print("========================================")
 
 for proj in sourceProjects:
@@ -133,36 +134,66 @@ for proj in sourceProjects:
                     if not os.path.exists(dokupagesfolder):
                         print("  ++> Creating Dokuwiki Pages Subfolder > " + dokupagesfolder)
                         os.makedirs(dokupagesfolder)
-                    dokupagesfile = dokupagesfolder + os.path.splitext(projfile)[0].lower() + ".txt"
+                    dokupagesfile = dokupagesfolder + "/" + os.path.splitext(projfile)[0].lower() + ".txt"
                     print(" *> Converting from GitHub Markdown to Dokuwiki File = " + dokupagesfile)
                     subprocess.run(["pandoc", "-s", "-o", dokupagesfile, "-f", "markdown_github", "-t", "dokuwiki", projfilepath])
-                    ReplaceFileContent(dokupagesfile, proj[2], "[[")
-                    ReplaceFileContent(dokupagesfile, proj[3], "[[")
+                    ## TODO:  Perform post process links update
 
                 elif ishtml or projfile.endswith(".htm") or projfile.endswith(".html"):
                     if not os.path.exists(dokupagesfolder):
                         print("  ++> Creating Dokuwiki Pages Subfolder > " + dokupagesfolder)
                         os.makedirs(dokupagesfolder)
-                    dokutempfile = dokupagesfolder + os.path.splitext(projfile)[0].lower() + ".temp"
+                    dokutempfile = dokupagesfolder + "/" + os.path.splitext(projfile)[0].lower() + ".temp"
                     print("Converting from HTML to Markdown = " + dokutempfile)
                     subprocess.run(["pandoc", "-s", "-o", dokutempfile, "-f", "html", "-t", "markdown_github", projfilepath])
-                    dokupagesfile = dokupagesfolder + os.path.splitext(projfile)[0].lower() + ".txt"
+                    dokupagesfile = dokupagesfolder + "/" + os.path.splitext(projfile)[0].lower() + ".txt"
                     print(" ... from Markdown to Dokuwiki File = " + dokupagesfile)
                     subprocess.run(["pandoc", "-s", "-o", dokupagesfile, "-f", "markdown_github", "-t", "dokuwiki", dokutempfile])
                     os.remove(dokutempfile)
-                    ReplaceFileContent(dokupagesfile, proj[2], "[[")
-                    ReplaceFileContent(dokupagesfile, proj[3], "[[")
+                    ## TODO:  Perform post process links update
 
                 else:
                     if not os.path.exists(dokumediafolder):
                         print("  ++> Creating Dokuwiki Media Subfolder > " + dokumediafolder)
                         os.makedirs(dokumediafolder)
-                    dokumediafile = dokumediafolder + projfile.lower();
+                    dokumediafile = dokumediafolder + "/" + projfile.lower();
                     print(" **> Copying Media File = " + dokumediafile)
                     if os.path.exists(dokumediafile):
                         os.remove(dokumediafile)
                     shutil.copy2(projfilepath, dokumediafile)
+                    ## TODO:  Perform post process links update
            
         
             print("==========")
+            print("
+
+### TODO:  Post Process Links Update ###
+#
+# Walk all of the dokuwiki/data/pages/*.txt files
+#    seek each [[...]] URL
+#      if the URL starts with one of the sourceProject's blob or tree prefixes:
+#          # create a relative link by removing the absolute prefix and convert to lower case
+#          dokulink = URL.replace(prefix, "").lower()
+#
+#          # convert http "/" separators to dokuwiki ":" separators
+#          dokulink = dokulink.replace("/", ":")
+#
+#          # strip the extensions from links that were converted to dokuwiki format
+#          if (dokulink.endswith(".txt") or dokulink.endswith(".md") or dokulink.endswith(".htm") or dokulink.endswith(".html")
+#              ## TODO:  strip off the extension
+#                  
+
+def ReplaceFileContent(filePath, originalText, replacedText):
+    ###
+    # Reads a file and does a global search and replace on its contents and writes it back.
+    ###
+    print(" >> Replacing " + originalText)
+    print("         with " + replacedText)
+    ioFile = open(filePath)
+    ioText = ioFile.read().replace(originalText, replacedText)
+    ioFile.close()
+    ioFile = open(filePath, "w")
+    ioFile.write(ioText)
+    ioFile.close()
+
 
