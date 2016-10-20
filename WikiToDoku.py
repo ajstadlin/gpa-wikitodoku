@@ -48,6 +48,7 @@
 # cp -Rf /home/aj/GPA/dokuwiki/data/media/* /var/lib/dokuwiki/data/media/.
 #
 #--------------------------------------------------------------
+# 10/20/16 AJ:  URL Replacement Routine development
 # 10/19/16 AJ:  Using os.walk instead of os.scandir + recursion
 # 10/15/16 AJ:  ReplaceFileContent() function added
 # 10/13/16 AJ:  Modified to detect and convert HTML files by "<html"
@@ -58,6 +59,7 @@ import os
 import shutil
 import string
 import subprocess
+import re
 
 # Staging Directories for Dokuwiki Pages and Media data files
 dokuwikiDataPages = "/home/aj/GPA/dokuwiki/data/pages"
@@ -79,9 +81,84 @@ sourceProjects = [
 ]
 ## TODO:  Extend this array with additional source projects
 
-# RUN
 
-print("WikiToDoku2.py Utility, rev Oct 19, 2016")
+### TODO:  Post Process URL Replacements ###
+#
+# MOVE THIS ROUTINE TO THE END OF THIS PROGRAM after development is completed.
+#
+# At this point in the program, we have converted all of the .md and .html files to dokuwiki
+# and saved them in a dokuwiki/data/pages and /media staging directory.
+# We now need to process all of the pages files and replace the absolute URL links with relative namespace links.
+#
+print("Processing Links in all of the dokuwiki/data/pages/*.txt files")
+for dokupath, dokusubfolders, dokufiles in os.walk(dokuwikiDataPages):
+    # Check for and do not process folders prefixed with "." like ".git"
+    if not (dokupath.find(".") == 0):
+        print("Dokuwiki Pages Subfolder > " + dokupath)
+
+        # Process each files in the current projfolder
+        for pagefile in dokufiles:
+            pagefilepath = dokupath + "/" + pagefile
+            print("  Dokuwiki Page > " + pagefilepath)
+
+            # To simplify this routine, we will assume that [[...]] URLs occur on a single line.
+            # That means there should be no CRLFs in the URL or its related text.
+            # This allows us to read and process the page file 1 line at a time
+            outputtext = "";
+            foundlink = "";
+            iofile = open(pagefilepath, 'r')
+            for inputline in iofile:
+                print(inputline)
+                if ((inputline.find("[[[[") > -1) or (inputline.find("]]]]") > -1))
+                    print("**** Nested Links Encountered **** Too complicated to process")
+                    # TODO:  Create a list of files with nested for manual editing.
+                    
+                # for each [[...]] URL in the inputline
+                for urlprefix in re.finditer('\[\[', inputline):
+                    print("  [[, ", urlprefix.start(), urlprefix.end())
+                    # for each urlprefix in the line, find the next matching suffix
+                    for urlsuffix in re.finditer('\]\]', inputline[urlprefix.start():len(inputline)]):
+                        # we only need the next suffix to match the prefix
+                        foundlink = inputline[urlprefix.start():(urlprefix.start() + urlsuffix.end())]
+                        print("  @ URL Link Found= " + foundlink)
+                        
+                        # Check to see if the URL is for one of the Dokuwiki projects,
+                        # if it is in a project, then convert it to a relative dokuwiki link
+                        for proj in sourceProjects:
+                            print("   Dokuwiki Project = " + proj[0])
+                            #print(" Source = " + proj[1])
+                            #print("   Blob = " + proj[2])
+                            #print("   Tree = " + proj[3])
+                            
+                            if (foundlink.find(proj[2]) == 0):
+                                foundlink = foundlink.replace(proj[2], "").lower()
+                                if (foundlink.endswith(".md") or foundlink.endswith(".htm") or foundlink.endswith(".html")):
+                                    # strip the extension off
+                                    foundlink = os.path.splitext(foundlink)[0].lower()
+                                foundlink = "[[" + proj[0] + ":" + foundlink.replace("/", ":")
+                                print("  Relative Link = " + foundlink)
+                                
+                            if (foundlink.find(proj[3]) == 0):
+                                foundlink = foundlink.replace(proj[3], "").lower()
+                                if (foundlink.endswith(".md") or foundlink.endswith(".htm") or foundlink.endswith(".html")):
+                                    # strip the extension off
+                                    foundlink = os.path.splitext(foundlink)[0].lower()
+                                foundlink = "[[" + proj[0] + ":" + foundlink.replace("/", ":")
+                                print("  Relative Link = " + foundlink)                        
+                        break                    
+
+            iofile.close
+
+## TODO:  In the above, replace the original links with the converted foundlinks
+#         Then write the results to a new version of the page file.
+#            
+#### END OF URL REPLACEMENT ROUTINE ####
+
+
+
+#### This is the Start of the Program ####
+
+print("WikiToDoku2.py Utility, rev Oct 20, 2016")
 print("========================================")
 
 for proj in sourceProjects:
@@ -165,23 +242,7 @@ for proj in sourceProjects:
            
         
             print("==========")
-            print("
 
-### TODO:  Post Process Links Update ###
-#
-# Walk all of the dokuwiki/data/pages/*.txt files
-#    seek each [[...]] URL
-#      if the URL starts with one of the sourceProject's blob or tree prefixes:
-#          # create a relative link by removing the absolute prefix and convert to lower case
-#          dokulink = URL.replace(prefix, "").lower()
-#
-#          # convert http "/" separators to dokuwiki ":" separators
-#          dokulink = dokulink.replace("/", ":")
-#
-#          # strip the extensions from links that were converted to dokuwiki format
-#          if (dokulink.endswith(".txt") or dokulink.endswith(".md") or dokulink.endswith(".htm") or dokulink.endswith(".html")
-#              ## TODO:  strip off the extension
-#                  
 
 def ReplaceFileContent(filePath, originalText, replacedText):
     ###
