@@ -214,7 +214,8 @@ for dokupath, dokusubfolders, dokufiles in os.walk(dokuwikiDataPages):
                             #print("   Blob = " + proj[2])
                             #print("   Tree = " + proj[3])
 
-                            #### TODO:  Optmize the next 2 conditions to call a common replacement subroutine
+                            #### TODO:  Optmize the next 3 conditions to call a common replacement subroutine
+                            ####        Also need to protect character casing of the right side of the "|".
                             
                             if (foundlink.find(proj[2]) == 0):
                                 newlink = foundlink.replace(proj[2], "").lower()
@@ -279,6 +280,40 @@ for dokupath, dokusubfolders, dokufiles in os.walk(dokuwikiDataPages):
                                 newlink = "[[" + proj[0] + ":" + newlink.replace("/", ":")
                                 print("  Relative Link = " + newlink)
                                 outputline = outputline.replace(foundlink, newlink)
+
+                            if (foundlink.find("[[http") < 0):
+                                # Already a relative link
+                                newlink = foundlink.lower()
+                                # packout spaces between URL and "|" separators
+                                packlink = newlink.replace(" |", "|")
+                                while packlink != newlink:
+                                    newlink = packlink
+                                    packlink = newlink.replace(" |", "|")
+                                    
+                                # strip out the .md, .htm, .html URL extension from the converted file links
+                                newlink = newlink.replace(".md|", "|")
+                                newlink = newlink.replace(".htm|", "|")
+                                newlink = newlink.replace(".html|", "|")
+                                newlink = newlink.replace(".md#", "#")
+                                newlink = newlink.replace(".htm#", "#")
+                                newlink = newlink.replace(".html#", "#")
+
+                                if ((newlink.find("|") < 0) and (newlink.find("#") < 0)):
+                                    # URL only link, packout spaces between URL and "]" suffix
+                                    packlink = newlink.replace(" |", "|")
+                                    while packlink != newlink:
+                                        newlink = packlink
+                                        packlink = newlink.replace(" ]", "]")
+                                    
+                                    # strip out the .md, .htm, .html URL extension from the converted file links
+                                    newlink = newlink.replace(".md]", "]")
+                                    newlink = newlink.replace(".htm]", "]")
+                                    newlink = newlink.replace(".html]", "]")
+                                
+                                newlink = "[[" + proj[0] + ":" + newlink.replace("/", ":")
+                                print("  Relative Link = " + newlink)
+                                outputline = outputline.replace(foundlink, newlink)
+
                                     
                             break
                                     
