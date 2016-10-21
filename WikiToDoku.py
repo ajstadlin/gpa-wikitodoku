@@ -81,81 +81,6 @@ sourceProjects = [
 ]
 ## TODO:  Extend this array with additional source projects
 
-
-### TODO:  Post Process URL Replacements ###
-#
-# MOVE THIS ROUTINE TO THE END OF THIS PROGRAM after development is completed.
-#
-# At this point in the program, we have converted all of the .md and .html files to dokuwiki
-# and saved them in a dokuwiki/data/pages and /media staging directory.
-# We now need to process all of the pages files and replace the absolute URL links with relative namespace links.
-#
-print("Processing Links in all of the dokuwiki/data/pages/*.txt files")
-for dokupath, dokusubfolders, dokufiles in os.walk(dokuwikiDataPages):
-    # Check for and do not process folders prefixed with "." like ".git"
-    if not (dokupath.find(".") == 0):
-        print("Dokuwiki Pages Subfolder > " + dokupath)
-
-        # Process each files in the current projfolder
-        for pagefile in dokufiles:
-            pagefilepath = dokupath + "/" + pagefile
-            print("  Dokuwiki Page > " + pagefilepath)
-
-            # To simplify this routine, we will assume that [[...]] URLs occur on a single line.
-            # That means there should be no CRLFs in the URL or its related text.
-            # This allows us to read and process the page file 1 line at a time
-            outputtext = "";
-            foundlink = "";
-            iofile = open(pagefilepath, 'r')
-            for inputline in iofile:
-                print(inputline)
-                if ((inputline.find("[[[[") > -1) or (inputline.find("]]]]") > -1))
-                    print("**** Nested Links Encountered **** Too complicated to process")
-                    # TODO:  Create a list of files with nested for manual editing.
-                    
-                # for each [[...]] URL in the inputline
-                for urlprefix in re.finditer('\[\[', inputline):
-                    print("  [[, ", urlprefix.start(), urlprefix.end())
-                    # for each urlprefix in the line, find the next matching suffix
-                    for urlsuffix in re.finditer('\]\]', inputline[urlprefix.start():len(inputline)]):
-                        # we only need the next suffix to match the prefix
-                        foundlink = inputline[urlprefix.start():(urlprefix.start() + urlsuffix.end())]
-                        print("  @ URL Link Found= " + foundlink)
-                        
-                        # Check to see if the URL is for one of the Dokuwiki projects,
-                        # if it is in a project, then convert it to a relative dokuwiki link
-                        for proj in sourceProjects:
-                            print("   Dokuwiki Project = " + proj[0])
-                            #print(" Source = " + proj[1])
-                            #print("   Blob = " + proj[2])
-                            #print("   Tree = " + proj[3])
-                            
-                            if (foundlink.find(proj[2]) == 0):
-                                foundlink = foundlink.replace(proj[2], "").lower()
-                                if (foundlink.endswith(".md") or foundlink.endswith(".htm") or foundlink.endswith(".html")):
-                                    # strip the extension off
-                                    foundlink = os.path.splitext(foundlink)[0].lower()
-                                foundlink = "[[" + proj[0] + ":" + foundlink.replace("/", ":")
-                                print("  Relative Link = " + foundlink)
-                                
-                            if (foundlink.find(proj[3]) == 0):
-                                foundlink = foundlink.replace(proj[3], "").lower()
-                                if (foundlink.endswith(".md") or foundlink.endswith(".htm") or foundlink.endswith(".html")):
-                                    # strip the extension off
-                                    foundlink = os.path.splitext(foundlink)[0].lower()
-                                foundlink = "[[" + proj[0] + ":" + foundlink.replace("/", ":")
-                                print("  Relative Link = " + foundlink)                        
-                        break                    
-
-            iofile.close
-
-## TODO:  In the above, replace the original links with the converted foundlinks
-#         Then write the results to a new version of the page file.
-#            
-#### END OF URL REPLACEMENT ROUTINE ####
-
-
-
 #### This is the Start of the Program ####
 
 print("WikiToDoku2.py Utility, rev Oct 20, 2016")
@@ -211,37 +136,167 @@ for proj in sourceProjects:
                     if not os.path.exists(dokupagesfolder):
                         print("  ++> Creating Dokuwiki Pages Subfolder > " + dokupagesfolder)
                         os.makedirs(dokupagesfolder)
-                    dokupagesfile = dokupagesfolder + "/" + os.path.splitext(projfile)[0].lower() + ".txt"
+                    dokupagesfile = dokupagesfolder + os.path.splitext(projfile)[0].lower() + ".txt"
                     print(" *> Converting from GitHub Markdown to Dokuwiki File = " + dokupagesfile)
                     subprocess.run(["pandoc", "-s", "-o", dokupagesfile, "-f", "markdown_github", "-t", "dokuwiki", projfilepath])
-                    ## TODO:  Perform post process links update
 
                 elif ishtml or projfile.endswith(".htm") or projfile.endswith(".html"):
                     if not os.path.exists(dokupagesfolder):
                         print("  ++> Creating Dokuwiki Pages Subfolder > " + dokupagesfolder)
                         os.makedirs(dokupagesfolder)
-                    dokutempfile = dokupagesfolder + "/" + os.path.splitext(projfile)[0].lower() + ".temp"
+                    dokutempfile = dokupagesfolder + os.path.splitext(projfile)[0].lower() + ".temp"
                     print("Converting from HTML to Markdown = " + dokutempfile)
                     subprocess.run(["pandoc", "-s", "-o", dokutempfile, "-f", "html", "-t", "markdown_github", projfilepath])
-                    dokupagesfile = dokupagesfolder + "/" + os.path.splitext(projfile)[0].lower() + ".txt"
+                    dokupagesfile = dokupagesfolder + os.path.splitext(projfile)[0].lower() + ".txt"
                     print(" ... from Markdown to Dokuwiki File = " + dokupagesfile)
                     subprocess.run(["pandoc", "-s", "-o", dokupagesfile, "-f", "markdown_github", "-t", "dokuwiki", dokutempfile])
                     os.remove(dokutempfile)
-                    ## TODO:  Perform post process links update
 
                 else:
                     if not os.path.exists(dokumediafolder):
                         print("  ++> Creating Dokuwiki Media Subfolder > " + dokumediafolder)
                         os.makedirs(dokumediafolder)
-                    dokumediafile = dokumediafolder + "/" + projfile.lower();
+                    dokumediafile = dokumediafolder + projfile.lower();
                     print(" **> Copying Media File = " + dokumediafile)
                     if os.path.exists(dokumediafile):
                         os.remove(dokumediafile)
-                    shutil.copy2(projfilepath, dokumediafile)
-                    ## TODO:  Perform post process links update
-           
+                    shutil.copy2(projfilepath, dokumediafile)          
         
             print("==========")
+
+
+
+### TODO:  Post Process URL Replacements ###
+#
+# At this point in the program, we have converted all of the .md and .html files to dokuwiki
+# and saved them in a dokuwiki/data/pages and /media staging directory.
+# We now need to process all of the pages files and replace the absolute URL links with relative namespace links.
+#
+print("Processing Links in all of the dokuwiki/data/pages/*.txt files")
+for dokupath, dokusubfolders, dokufiles in os.walk(dokuwikiDataPages):
+    # Check for and do not process folders prefixed with "." like ".git"
+    if not (dokupath.find(".") == 0):
+        print("Dokuwiki Pages Subfolder > " + dokupath)
+
+        # Process each files in the current projfolder
+        for pagefile in dokufiles:
+            pagefilepath = dokupath + "/" + pagefile
+            print("  Dokuwiki Page > " + pagefilepath)
+
+            # To simplify this routine, we will assume that [[...]] URLs occur on a single line.
+            # That means there should be no CRLFs in the URL or its related text.
+            # This allows us to read and process the page file 1 line at a time
+            outputtext = ""
+            outputline = ""
+            foundlink = ""
+            iofile = open(pagefilepath, 'r')
+            for inputline in iofile:
+                #print("Input= " + inputline)
+                outputline = inputline
+                if ((inputline.find("[[[[") > -1) or (inputline.find("]]]]") > -1)):
+                    print("**** Nested Links Encountered **** Too complicated to process")
+                    # TODO:  Create a list of files with nested for manual editing.
+                    
+                # for each [[...]] URL in the inputline
+                for urlprefix in re.finditer('\[\[', inputline):
+                    print("  [[, ", urlprefix.start(), urlprefix.end())
+                    # for each urlprefix in the line, find the next matching suffix
+                    for urlsuffix in re.finditer('\]\]', inputline[urlprefix.start():len(inputline)]):
+                        # we only need the next suffix to match the prefix
+                        foundlink = inputline[urlprefix.start():(urlprefix.start() + urlsuffix.end())]
+                        print("  @ URL Link Found= " + foundlink)
+                        
+                        # Check to see if the URL is for one of the Dokuwiki projects,
+                        # if it is in a project, then convert it to a relative dokuwiki link
+                        for proj in sourceProjects:
+                            #print("   Dokuwiki Project = " + proj[0])
+                            #print(" Source = " + proj[1])
+                            #print("   Blob = " + proj[2])
+                            #print("   Tree = " + proj[3])
+
+                            #### TODO:  Optmize the next 2 conditions to call a common replacement subroutine
+                            
+                            if (foundlink.find(proj[2]) == 0):
+                                newlink = foundlink.replace(proj[2], "").lower()
+                                # packout spaces between URL and "|" separators
+                                packlink = newlink.replace(" |", "|")
+                                while packlink != newlink:
+                                    newlink = packlink
+                                    packlink = newlink.replace(" |", "|")
+                                    
+                                # strip out the .md, .htm, .html URL extension from the converted file links
+                                newlink = newlink.replace(".md|", "|")
+                                newlink = newlink.replace(".htm|", "|")
+                                newlink = newlink.replace(".html|", "|")
+                                newlink = newlink.replace(".md#", "#")
+                                newlink = newlink.replace(".htm#", "#")
+                                newlink = newlink.replace(".html#", "#")
+
+                                if ((newlink.find("|") < 0) and (newlink.find("#") < 0)):
+                                    # URL only link, packout spaces between URL and "]" suffix
+                                    packlink = newlink.replace(" |", "|")
+                                    while packlink != newlink:
+                                        newlink = packlink
+                                        packlink = newlink.replace(" ]", "]")
+                                    
+                                    # strip out the .md, .htm, .html URL extension from the converted file links
+                                    newlink = newlink.replace(".md]", "]")
+                                    newlink = newlink.replace(".htm]", "]")
+                                    newlink = newlink.replace(".html]", "]")
+                                
+                                newlink = "[[" + proj[0] + ":" + newlink.replace("/", ":")
+                                print("  Relative Link = " + newlink)
+                                outputline = outputline.replace(foundlink, newlink)
+                                
+                            if (foundlink.find(proj[3]) == 0):
+                                newlink = foundlink.replace(proj[3], "").lower()
+                                # packout spaces between URL and "|" separators
+                                packlink = newlink.replace(" |", "|")
+                                while packlink != newlink:
+                                    newlink = packlink
+                                    packlink = newlink.replace(" |", "|")
+                                    
+                                # strip out the .md, .htm, .html URL extension from the converted file links
+                                newlink = newlink.replace(".md|", "|")
+                                newlink = newlink.replace(".htm|", "|")
+                                newlink = newlink.replace(".html|", "|")
+                                newlink = newlink.replace(".md#", "#")
+                                newlink = newlink.replace(".htm#", "#")
+                                newlink = newlink.replace(".html#", "#")
+
+                                if ((newlink.find("|") < 0) and (newlink.find("#") < 0)):
+                                    # URL only link, packout spaces between URL and "]" suffix
+                                    packlink = newlink.replace(" |", "|")
+                                    while packlink != newlink:
+                                        newlink = packlink
+                                        packlink = newlink.replace(" ]", "]")
+                                    
+                                    # strip out the .md, .htm, .html URL extension from the converted file links
+                                    newlink = newlink.replace(".md]", "]")
+                                    newlink = newlink.replace(".htm]", "]")
+                                    newlink = newlink.replace(".html]", "]")
+                                
+                                newlink = "[[" + proj[0] + ":" + newlink.replace("/", ":")
+                                print("  Relative Link = " + newlink)
+                                outputline = outputline.replace(foundlink, newlink)
+                                    
+                            break
+                                    
+                outputtext = outputtext + "\r\n" + outputline
+                #print("Output= " + outputline)
+
+            # Close and delete the input file, then Write the text to the Output File        
+            iofile.close()
+            os.remove(pagefilepath)
+            iofile = open(pagefilepath, 'w')
+            iofile.write(outputtext)
+            iofile.close()
+            print("Updated Page File Saved= " + pagefilepath)
+
+## TODO:  In the above, replace the original links with the converted foundlinks
+#         Then write the results to a new version of the page file.
+#            
+#### END OF URL REPLACEMENT ROUTINE ####
 
 
 def ReplaceFileContent(filePath, originalText, replacedText):
